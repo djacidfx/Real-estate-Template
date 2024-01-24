@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Habro - Vacation and Home Rentals - HTML5 Template</title>
+    <!-- meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="habro">
+    <meta name="description" content="Habro is a html template for vacation and home rentals.">
+    <meta name="author" content="mazaajthemes">
+
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
+    <link href="css/bootstrap-select.css" rel="stylesheet" type="text/css"/>
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    <link href="css/owl.carousel.min.css" rel="stylesheet" type="text/css"/>
+    <link href="css/jquery-ui.css" rel="stylesheet" type="text/css"/>
+    <link href="css/magnific-popup.css" rel="stylesheet" type="text/css"/>
+    <link href="css/main.css" rel="stylesheet" type="text/css"/>
+    <link href="css/styling-options.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<a href="#" class="btn btn-primary btn-scrollup"><i class="fa fa-angle-up"></i></a>
+<!--start header area-->
+<div class="header-area">
+    <!--start mobile header-->
+    <div class="mobile-header">
+        <div class="container">
+            <div class="mobile-header-inner">
+                <!--start nav-->
+                <div class="mobile-header-nav">
+                    <span class="mobile-nav-trigger"><i class="fa fa-navicon"></i></span>
+                    <div class="mobile-nav-dropdown"></div>
+                </div>
+                <!--end nav-->
+                <!--start logo-->
+                <div class="mobile-header-logo">
+                    <a href="index.html"><img src="http://placehold.it/100x30" width="100" height="30" alt="logo"></a>
+                </div>
+                <!--end logo-->
+                <!--start header right-->
+                <div class="mobile-header-user">
+                    <!--<span class="user-icon"><i class="fa fa-user"></i></span>-->
+                    <span class="user-icon">
+                        <img src="http://placehold.it/36x36" alt="profile image" class="img-circle" width="36" height="36">
+                    </span>
+                    <div class="account-dropdown">
+                        <ul>
+                            <li><a href="dashboard-create-listing.html"> <i class="fa fa-plus-circle"></i>Create Listing</a>
+                            </li>
+                            <li><a href="#" data-toggle="modal" data-target=".login-modal"> <i class="fa fa-user"></i>
+                                Log in / Register </a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!--end header right-->
+            </div>
+        </div>
+    </div>
+    <!--end mobile header-->
+</div>
+<!--end header area-->
+<!--start dashboard area-->
+<main id="dashboard-body-area">
+    <!-- start dashboard panel -->
+    <div class="dashboard-panel">
+        <div class="dashboard-bar">
+            <div class="user-image-block">
+                <div class="user-image"><img src="http://placehold.it/130x130" class="img-circle" alt="Benjamin Combs">
+                </div>
+                <p class="user-title">Benjamin Combs</p>
+            </div>
+            <ul class="board-panel-menu">
+                <li><a href="dashboard-account.html"><i class="fa fa-home"></i>Dashboard</a></li>
+                <li><a href="dashboard-account.html"><i class="fa fa-user-o"></i> Profile</a></li>
+                <li><a href="dashboard-listing.html"><i class="fa fa-th-list"></i>My Listings</a></li>
+                <li class="active"><a href="dashboard-create-listing.html"><i class="fa fa-plus-square"></i>Create
+                    Listings</a>
+                    <ul class="sub-menu">
+                        <li><a href="dashboard-membership-packages.html"> <i class="fa fa-angle-right"></i> Membership
+                            Packages</a></li>
+                        <li><a href="dashboard-payment.html"> <i class="fa fa-angle-right"></i> Payment</a></li>
+                    </ul>
+                </li>
+                <li><a href="dashboard-change-password.html"><i class="fa fa-lock"></i>Change Password</a></li>
+                <li><a href="#"><i class="fa fa-sign-out"></i>Log out</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- end dashboard panel -->
+    <div class="dashboard-right">
+        <div class="dashboard-title-head white-bg">
+            <h2 class="head-title">Add New Property</h2>
+            <div class="head-right">
+                <a href="index.html" class="visit-site">Visit site</a>
+            </div>
+        </div>
+        <div class="dashboard-content-area">
+            <form method="post" id="add-property-form">
+                <div class="validate-errors alert alert-danger alert-dismissible" role="alert">
+                    <button type="button" class="close" data-hide="alert" aria-label="Close"><i class="fa fa-close"></i>
+                    </button>
+                    <strong>Error!</strong> Please fill out the following required fields.
+                </div>
+                <div class="validate-errors-gal alert alert-danger alert-dismissible" role="alert">
+                    <button type="button" class="close" data-hide="alert" aria-label="Close"><i class="fa fa-close"></i>
+                    </button>
+                    <strong>Error!</strong> Upload at least one image.
+                </div>
+                <div class="form-step">
+                    <!--step information-->
+                    <div class="dashboard-block white-bg">
+                        <div class="block-head">
+                            <h3 class="head-title">Property Description & Price</h3>
+                            <div class="head-right">
+                                <div class="steps-count"><span class="text-primary">Step</span> <span
+                                        class="step-counter">0</span>/<span class="total-steps">0</span></div>
+                            </div>
+                        </div>
+                        <div class="dashboard-block-body">
+                            <div class="listing-form-row row">
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <label for="property-title">Title</label>
+                                        <input type="text" name="title" class="form-control required"
+                                               id="property-title" placeholder="Enter your property title">
+                                    </div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <label for="description">Description</label>
+                                        <textarea name="description" class="form-control" id="description" rows="6"
+                                                  placeholder="Enter your property title"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="form-row-separator">
+                            <div class="listing-form-row row">
+                                <div class="col-sm-4">
+                                    <div class="form-group">
+                                        <label for="property_type">Type</label>
+                                        <select name="property-type" class="selectpicker" id="property_type"
+                                                title="Select">
+                                            <option>Type 1</option>
+                                            <option>Type 2</option>
+                                            <option>Type 3</option>
+                                            <option>Type 4</option>
+                                            <option>Type 5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="form-group">
+                                        <label for="property_status">Status</label>
+                                        <select name="property_status" class="selectpicker" id="property_status"
+                                                data-live-search="false" data-live-search-style="begins" title="Select">
+                                            <option>Status 1</option>
+                                            <option>Status 2</option>
+                                            <option>Status 3</option>
+                                            <option>Status 4</option>
+                                            <option>Status 5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="form-group">
+                                        <label for="property_label">Label</label>
+                                        <select name="property_label" class="selectpicker" id="property_label"
+                                                title="Select">
+                                            <option>Label 1</option>
+                                            <option>Label 2</option>
+                                            <option>Label 3</option>
+                                            <option>Label 4</option>
+                                            <option>Label 5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="form-row-separator">
+                            <div class="listing-form-row row">
+                                <div class="col-sm-4">
+                                    <div class="form-group">
+                                        <label for="property_price">Sale or Rent Price</label>
+                                        <input type="text" name="property_price" class="form-control"
+                                               id="property_price" placeholder="Enter Sale or Rent Price">
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="form-group">
+                                        <label for="property_price_before">After Price Label (ex: monthly)</label>
+                                        <input type="text" name="property_price_before" class="form-control"
+                                               id="property_price_before" placeholder="Enter After Price Label">
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="form-group">
+                                        <label for="property_price_after">Price Prefix (ex: Start From)</label>
+                                        <input type="text" name="property_price_after" class="form-control"
+                                               id="property_price_after" placeholder="Enter Price Prefix">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-step form-step-gal">
+                    <!--step Media-->
+                    <div class="dashboard-block white-bg">
+                        <div class="block-head">
+                            <h3 class="head-title">Media</h3>
+                            <div class="head-right">
+                                <div class="steps-count"><span class="text-primary">Step</span> <span
+                                        class="step-counter">0</span>/<span class="total-steps">0</span></div>
+                            </div>
+                        </div>
+                        <div class="dashboard-block-body">
+                            <div class="listing-form-row row">
+                                <div class="col-sm-12 col-xs-12">
+                                    <div class="upload-property-media">
+                                        <div class="media-drag-drop">
+                                            <i class="fa fa-upload"></i>
+                                            <h4 class="drag-title">Drag a file here or click to upload</h4>
+                                            <button class="btn btn-secondary">Select Images</button>
+                                        </div>
+                                        <div class="upload-media-gallery">
+                                            <div class="row">
+                                                <div class="col-sm-2 col-xs-2">
+                                                    <figure class="upload-gallery-thumb">
+                                                        <img src="http://placehold.it/150x150" alt="thumb">
+                                                        <span class="icon icon-fav"><i class="fa fa-star-o"></i></span>
+                                                        <span class="icon icon-trash"><i class="fa fa-trash"></i></span>
+                                                        <span class="icon icon-loader"><i
+                                                                class="fa fa-spinner fa-spin"></i></span>
+                                                    </figure>
+                                                </div>
+                                                <div class="col-sm-2 col-xs-2">
+                                                    <figure class="upload-gallery-thumb">
+                                                        <img src="http://placehold.it/150x150" alt="thumb">
+                                                        <span class="icon icon-fav"><i class="fa fa-star-o"></i></span>
+                                                        <span class="icon icon-trash"><i class="fa fa-trash"></i></span>
+                                                        <span class="icon icon-loader"><i
+                                                                class="fa fa-spinner fa-spin"></i></span>
+                                                    </figure>
+                                                </div>
+                                                <div class="col-sm-2 col-xs-2">
+                                                    <figure class="upload-gallery-thumb">
+                                                        <img src="http://placehold.it/150x150" alt="thumb">
+                                                        <span class="icon icon-fav"><i class="fa fa-star-o"></i></span>
+                                                        <span class="icon icon-trash"><i class="fa fa-trash"></i></span>
+                                                        <span class="icon icon-loader"><i
+                                                                class="fa fa-spinner fa-spin"></i></span>
+                                                    </figure>
+                                                </div>
+                                                <div class="col-sm-2 col-xs-2">
+                                                    <figure class="upload-gallery-thumb">
+                                                        <img src="http://placehold.it/150x150" alt="thumb">
+                                                        <span class="icon icon-fav"><i class="fa fa-star-o"></i></span>
+                                                        <span class="icon icon-trash"><i class="fa fa-trash"></i></span>
+                                                        <span class="icon icon-loader"><i
+                                                                class="fa fa-spinner fa-spin"></i></span>
+                                                    </figure>
+                                                </div>
+                                                <div class="col-sm-2 col-xs-2">
+                                                    <figure class="upload-gallery-thumb">
+                                                        <img src="http://placehold.it/150x150" alt="thumb">
+                                                        <span class="icon icon-fav"><i class="fa fa-star-o"></i></span>
+                                                        <span class="icon icon-trash"><i class="fa fa-trash"></i></span>
+                                                        <span class="icon icon-loader"><i
+                                                                class="fa fa-spinner fa-spin"></i></span>
+                                                    </figure>
+                                                </div>
+                                                <div class="col-sm-2 col-xs-2">
+                                                    <figure class="upload-gallery-thumb">
+                                                        <img src="http://placehold.it/150x150" alt="thumb">
+                                                        <span class="icon icon-fav"><i class="fa fa-star-o"></i></span>
+                                                        <span class="icon icon-trash"><i class="fa fa-trash"></i></span>
+                                                        <span class="icon icon-loader"><i
+                                                                class="fa fa-spinner fa-spin"></i></span>
+                                                    </figure>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-step">
+                    <!--step location-->
+                    <div class="dashboard-block white-bg">
+                        <div class="block-head">
+                            <h3 class="head-title">Property Location</h3>
+                            <div class="head-right">
+                                <div class="steps-count"><span class="text-primary">Step</span> <span
+                                        class="step-counter">0</span>/<span class="total-steps">0</span></div>
+                            </div>
+                        </div>
+                        <div class="dashboard-block-body">
+                            <div class="listing-form-row row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="address">Address</label>
+                                        <input type="text" name="address" class="form-control required" id="address"
+                                               placeholder="Enter your property title">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="neighborhood">Neighborhood</label>
+                                        <input type="text" name="neighborhood" class="form-control" id="neighborhood"
+                                               placeholder="Enter your property title">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="city">City</label>
+                                        <input type="text" name="city" class="form-control" id="city"
+                                               placeholder="Enter your property title">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="zip">Zip</label>
+                                        <input type="text" name="zip" class="form-control" id="zip"
+                                               placeholder="Enter your property title">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="countryState">Country / State</label>
+                                        <input type="text" name="country_state" class="form-control" id="countryState"
+                                               placeholder="Enter your property title">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="country">Country</label>
+                                        <select name="country" class="selectpicker" id="country"
+                                                data-live-search="false" data-live-search-style="begins" title="Select">
+                                            <option>Country 1</option>
+                                            <option>Country 2</option>
+                                            <option>Country 3</option>
+                                            <option>Country 4</option>
+                                            <option>Country 5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="form-row-separator">
+                            <div class="listing-form-row row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="property-map">Google Maps latitude</label>
+                                        <input type="text" name="property_map" class="form-control" id="property-map"
+                                               placeholder="Enter your property title">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="property_map_long">Google Maps longitude</label>
+                                        <input type="text" name="property_map_long" class="form-control"
+                                               id="property_map_long" placeholder="Enter your property title">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="property_map_street">Google Street View - Camera Angle</label>
+                                        <input type="text" name="property_map_street" class="form-control"
+                                               id="property_map_street" placeholder="Enter your property title">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label>&nbsp;</label>
+                                        <div class="checkbox">
+                                            <label>
+                                                <input name="street_view" type="checkbox">
+                                                Enable Google street view
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-step">
+                    <!--step property detail-->
+                    <div class="dashboard-block white-bg">
+                        <div class="block-head">
+                            <h3 class="head-title">Property Detail</h3>
+                            <div class="head-right">
+                                <div class="steps-count"><span class="text-primary">Step</span> <span
+                                        class="step-counter">0</span>/<span class="total-steps">0</span></div>
+                            </div>
+                        </div>
+                        <div class="dashboard-block-body">
+                            <div class="listing-form-row row">
+                                <div class="col-sm-4">
+                                    <div class="form-group">
+                                        <label for="property_id">Property ID</label>
+                                        <input name="property_id" class="form-control" id="property_id"
+                                               placeholder="Enter property ID">
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="form-group">
+                                        <label for="property_area">Area Size</label>
+                                        <input name="property_area" class="form-control" id="property_area"
+                                               placeholder="Enter property area size">
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="form-group">
+                                        <label for="property_size_prefix">Size Prefix</label>
+                                        <input name="property_size" class="form-control" id="property_size_prefix"
+                                               placeholder="Sq Ft">
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="form-group">
+                                        <label for="property_bedrooms">Bedrooms</label>
+                                        <input name="bedrooms" class="form-control" id="property_bedrooms"
+                                               placeholder="Enter number of bedrooms">
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="form-group">
+                                        <label for="property_bathrooms">Bathrooms</label>
+                                        <input name="bathrooms" class="form-control" id="property_bathrooms"
+                                               placeholder="Enter number of bathrooms">
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="form-group">
+                                        <label for="property_garage">Garage</label>
+                                        <input name="garage" class="form-control" id="property_garage"
+                                               placeholder="Enter number of garages">
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="form-group">
+                                        <label for="property_garage_size">Garages Size</label>
+                                        <input name="garage_size" class="form-control" id="property_garage_size"
+                                               placeholder="Enter garage size">
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="form-group">
+                                        <label for="property_year_built">Year Built</label>
+                                        <div class="input-group input_date">
+                                            <div class="input-group-addon"><i class="fa fa-calendar"></i></div>
+                                            <input name="year_built" class="form-control ced_datepicker"
+                                                   id="property_year_built">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="form-group">
+                                        <label for="property_video">Virtual Tour Video URL</label>
+                                        <input name="video" class="form-control" id="property_video"
+                                               placeholder="YouTube, Vimeo, SWF File and MOV File are supported">
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="form-row-separator">
+                            <div class="listing-form-row row">
+                                <h4>Additional Details</h4>
+                                <table class="property-additional-detail">
+                                    <thead>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                        <td><label>Title</label></td>
+                                        <td><label>Value</label></td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+                                    </thead>
+                                    <tbody class="ui-sortable">
+                                    <tr>
+                                        <td class="sort-action">
+                                            <span class="sort-btn ui-sortable-handle"><i
+                                                    class="fa fa-navicon"></i></span>
+                                        </td>
+                                        <td class="title">
+                                            <input class="form-control" type="text">
+                                        </td>
+                                        <td>
+                                            <input class="form-control" type="text">
+                                        </td>
+                                        <td class="sort-action">
+                                            <span class="remove-btn"><i class="fa fa-remove"></i></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="sort-action">
+                                            <span class="sort-btn ui-sortable-handle"><i
+                                                    class="fa fa-navicon"></i></span>
+                                        </td>
+                                        <td class="title">
+                                            <input class="form-control" type="text">
+                                        </td>
+                                        <td>
+                                            <input class="form-control" type="text">
+                                        </td>
+                                        <td class="sort-action">
+                                            <span class="remove-btn"><i class="fa fa-remove"></i></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                    <tfoot>
+                                    <tr>
+                                        <td></td>
+                                        <td>
+                                            <button type="button" class="btn btn-default btn-sm"><i
+                                                    class="fa fa-plus fa-right-5"></i> Add New
+                                            </button>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-step">
+                    <!--step features-->
+                    <div class="dashboard-block white-bg">
+                        <div class="block-head">
+                            <h3 class="head-title">Property Features</h3>
+                            <div class="head-right">
+                                <div class="steps-count"><span class="text-primary">Step</span> <span
+                                        class="step-counter">0</span>/<span class="total-steps">0</span></div>
+                            </div>
+                        </div>
+                        <div class="dashboard-block-body">
+                            <div class="listing-form-row row">
+                                <div class="col-sm-2">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input name="feature[]" value="air-conditioning" type="checkbox">
+                                            Air Conditioning
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-2">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input name="feature[]" value="lawn" type="checkbox">
+                                            Lawn
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-2">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input name="feature[]" value="swimming-pool" type="checkbox">
+                                            Swimming Pool
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-2">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input name="feature[]" value="barbeque" type="checkbox">
+                                            Barbeque
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-2">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input name="feature[]" value="microwave" type="checkbox">
+                                            Microwave
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-2">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input name="feature[]" value="tv-cable" type="checkbox">
+                                            TV Cable
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-2">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input name="feature[]" value="dryer" type="checkbox">
+                                            Dryer
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-2">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input name="feature[]" value="outdoor-shower" type="checkbox">
+                                            Outdoor Shower
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-2">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input name="feature[]" value="washer" type="checkbox">
+                                            Washer
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-2">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input name="feature[]" value="gym" type="checkbox">
+                                            Gym
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-2">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input name="feature[]" value="refrigerator" type="checkbox">
+                                            Refrigerator
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-2">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input name="feature[]" value="wifi" type="checkbox">
+                                            WiFi
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-step">
+                    <!--step video-->
+                    <div class="dashboard-block white-bg">
+                        <div class="block-head">
+                            <h3 class="head-title">Property Video</h3>
+                            <div class="head-right">
+                                <div class="steps-count"><span class="text-primary">Step</span> <span
+                                        class="step-counter">0</span>/<span class="total-steps">0</span></div>
+                            </div>
+                        </div>
+                        <div class="dashboard-block-body">
+                            <div class="listing-form-row row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="videoUrl">Video URL </label>
+                                        <input name="video_url" class="form-control" id="videoUrl"
+                                               placeholder="Enter your property title">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="table-list">
+                                        <div class="form-group">
+                                            <label for="videoImageUrl">Video Image URL</label>
+                                            <div class="input-group">
+                                                <input name="image_url" class="form-control" id="videoImageUrl"
+                                                       placeholder="Enter Video Image URL">
+                                                <span class="input-group-btn">
+                                                        <button class="btn btn-primary">Upload</button>
+                                                    </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="steps-nav">
+                    <div class="pull-left">
+                        <button type="button" class="btn btn-default btn-step-back action">Back</button>
+                    </div>
+                    <div class="pull-right">
+                        <button type="button" class="btn btn-default margin-right-10 btn-long">Save as draft</button>
+                        <button type="button" class="btn btn-step-next btn-primary btn-long action">Next <i
+                                class="fa fa-left-8 fa-angle-right"></i></button>
+                        <button type="submit" class="btn btn-step-submit btn-primary action">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</main>
+<!--end dashboard area-->
+<!--Start Scripts-->
+<script  src="js/jquery.js"></script>
+<script  src="js/jquery.validate.min.js"></script>
+<script  src="js/bootstrap.min.js"></script>
+<script  src="js/bootstrap-select.js"></script>
+<script  src="js/jquery.easing.1.3.js"></script>
+<script  src="js/jquery-ui.js"></script>
+<script  src="js/isotope.pkgd.min.js"></script>
+<script  src="js/modernizr.custom.js"></script>
+<script  src="js/owl.carousel.min.js"></script>
+<script  src="js/jquery.magnific-popup.min.js"></script>
+<script  src="js/custom.js"></script>
+</body>
+</html>

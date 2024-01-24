@@ -1,0 +1,1160 @@
+// body
+// -------------------------------
+body {
+  //@include typography(14px, 1.42857143, 0, 300);
+  //text-align: left;
+}
+b, strong {
+  font-weight: 700;
+}
+//global
+// -------------------------------
+//.label {
+  //@include typography(13px, 1px, 0 0 10px, 500);
+  //font-size: 13px;
+//}
+label {
+  margin: 0 0 8px;
+  line-height: 22px;
+}
+.label-wrap {
+  .label {
+    font-size: 11px;
+    text-transform: uppercase;
+    line-height: 1.32857;
+    vertical-align: top;
+    font-weight: 500;
+  }
+}
+
+label,
+.label,
+.form-control,
+.bootstrap-select .btn,
+.input-unit,
+.range-input {
+  font-size: 13px;
+}
+.btn {
+  font-size: 14px;
+}
+.label,
+label,
+.btn,
+.range-input {
+  font-weight: 500;
+}
+.radio-inline label,
+.checkbox-inline label {
+  font-weight: 400;
+}
+
+.bootstrap-select .btn{
+    text-transform: none;
+}
+
+.form-control,
+.bootstrap-select .btn,
+.input-unit {
+  //font-size: 13px;
+  font-weight: 400;
+}
+
+
+.alert {
+  @include respond-to(tablet-portrait){
+    //font-size: 12px;
+  }
+}
+.breadcrumb {
+  li {
+    //font-weight: 400;
+    //font-size: 13px;
+  }
+  //a {
+    //font-weight: 400;
+  //}
+}
+
+.changer-nav {
+  a{
+    @include typography(14px, 50px, 0, 500);
+    text-transform: uppercase;
+  }
+}
+.changer-title {
+  @include typography(14px, 26px, 0, 500);
+}
+
+// buttons
+// ------------------------------- 
+.btn {
+  line-height: 1.42857;
+  //text-align: center;
+}
+
+.btn-lg {
+    font-size: 16px !important;
+    line-height: 1.3333333 !important;
+}
+
+//START PAGINATION STYLE*/
+.pagination-wrap {
+  .pagination {
+    a {
+      //@include typography(14px, 28px, 0, 500);
+      //font-size: 14px;
+      line-height: 28px;
+      font-weight: 500;
+    }
+  }
+}
+
+// Typography for template
+h1,h2,h3,h4,h5,h6 {
+  //margin-top: 0;
+  margin: 0 0 28px;
+}
+p {
+  margin: 0 0 16px;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-weight: 500;
+  line-height: 1.1;
+}
+h1{
+  font-size: 34px;
+}
+h2{
+  font-size: 28px;
+}
+h3{
+  font-size: 24px;
+}
+h4{
+  font-size: 20px;
+}
+h5{
+  font-size: 16px;
+}
+h6{
+  font-size: 14px;
+}
+ul{
+  li{
+
+  }
+}
+ol{
+  li{
+
+  }
+}
+
+@include respond-to(tablet-landscape-desktop){
+  h1{
+    font-size: 32px;
+  }
+  h2{
+    font-size: 26px;
+  }
+  h3{
+    font-size: 22px;
+  }
+}
+
+@include respond-to(tablet-portrait){
+  h1{
+    font-size: 28px;
+  }
+  h2{
+    font-size: 24px;
+  }
+  h3{
+    font-size: 20px;
+  }
+  h4{
+    font-size: 18px;
+  }
+  h5{
+    font-size: 14px;
+  }
+}
+
+blockquote {
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.article-content,
+.blog-body,
+.section-property-content .property-description,
+.property-article {
+  h1,h2,h3,h4,h5,h6 {
+    margin: 24px 0 18px;
+    //margin-bottom: 18px;
+    //margin-bottom: 20px;
+  }
+  h1{
+    font-size: 30px;
+  }
+  h2{
+    font-size: 24px;
+  }
+  h3{
+    font-size: 20px;
+  }
+  h4{
+    font-size: 18px;
+  }
+  h5{
+    font-size: 16px;
+  }
+  h6{
+    font-size: 14px;
+  }
+  p {
+    //font-size: 14px;
+    //margin-bottom: 24px;
+    //line-height: 26px;
+    &:last-child{
+      margin: 0;
+    }
+  }
+  ul,
+  ol {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding-left: 25px;
+    li{
+      padding-left: 6px;
+      //font-size: 14px;
+      line-height: 24px;
+      //font-weight: 400;
+    }
+    ul,
+    ol {
+      margin-top: 8px;
+      margin-bottom: 8px;
+    }
+  }
+  dt, dd {
+    //line-height: 24px;
+  }
+
+  p, dd, ul li, ol li {
+    //font-size: 14px;
+    //font-weight: 400;
+  }
+
+  @include respond-to(tablet-landscape-desktop){
+    h1{
+      font-size: 28px;
+    }
+    h2{
+      font-size: 22px;
+    }
+    h3{
+      font-size: 18px;
+    }
+    h4{
+      font-size: 14px;
+    }
+    h5{
+      font-size: 14px;
+    }
+    h6{
+      font-size: 12px;
+    }
+    ul,
+    ol{
+      margin-top: 25px;
+      margin-bottom: 25px;
+      li{
+        //font-size: 12px;
+        //line-height: 26px;
+      }
+    }
+    dt, dd{
+      //line-height: 18px;
+    }
+    dd{
+      //font-size: 12px;
+    }
+  }
+
+  @include respond-to(tablet-portrait){
+    h1{
+      font-size: 22px;
+    }
+    h2{
+      font-size: 20px;
+    }
+    h3{
+      font-size: 18px;
+    }
+    h4{
+      font-size: 16px;
+    }
+    h5{
+      font-size: 14px;
+    }
+    h6 {
+      font-size: 12px;
+    }
+    p,dd,
+    ul li,
+    ol li{
+      //font-size: 12px;
+    }
+    ul,
+    ol{
+      margin-top: 20px;
+      margin-bottom: 20px;
+      li{
+        line-height: 20px;
+      }
+    }
+    dt, dd{
+      //line-height: 18px;
+    }
+  }
+}
+
+// layout typo
+// -------------------------------
+.tab{
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+  //text-align: center;
+}
+
+// headers
+// -------------------------------
+
+.navi > ul > li > a,
+.header-right .btn,
+.header-right a,
+.menu-dropdown,
+.navi .ced-megamenu-wrap a {
+    font-size: 13px;
+    font-weight: 500;
+}
+.account-dropdown ul > li a,
+.account-loggedin,
+.dropdown-menu > li > a,
+.board-panel-menu > li,
+.breadcrumb li {
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.menu-dropdown a {
+  line-height: 20px;
+}
+
+.extended-menu-btn {
+  font-weight: 500;
+  //line-height: 60px;
+  font-size: 16px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.header-contact {
+  .header-info {
+    .icon {
+      font-size: 22px;
+      line-height: 20px;
+    }
+    .title {
+      font-size: 14px;
+      font-weight: 500;
+    }
+    .value {
+      //font-size: 13px;
+    }
+  }
+}
+
+.crncy-lang-block .dropdown-menu li {
+  font-size: 12px;
+}
+
+
+
+//START HEADER EXTENDED MENU STYLE*/
+//.header-extended-menu{
+//  .item-price{
+//    font-size: 22px;
+//    line-height: 22px;
+//    sub,
+//    sup{
+//      font-size: 12px;
+//    }
+//  }
+//  .item-media-title .title{
+//    font-size: 12px;
+//    line-height: 12px;
+//    margin: 5px 0 0;
+//  }
+//}
+
+//START BANNER TYPO STYLE*/
+.page-media-caption {
+  .caption-content {
+
+  }
+  h2,h3,h4 {
+    text-transform: uppercase;
+  }
+  h2,h3 {
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+  h2 {
+    font-size: 45px;
+    line-height: 50px;
+  }
+  h3 {
+    font-size: 40px;
+    line-height: 46px;
+  }
+  h4 {
+    font-size: 23px;
+    line-height: 32px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    letter-spacing: .09em;
+  }
+  p {
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 300;
+  }
+  .breadcrumb li {
+    font-size: 18px;
+  }
+  @include respond-to(991){
+    h2 {
+      font-size: 34px;
+      line-height: 40px;
+    }
+    h3 {
+      font-size: 30px;
+      line-height: 36px;
+    }
+    p {
+      margin-bottom: 15px;
+    }
+    .breadcrumb li {
+      font-size: 14px;
+    }
+  }
+  @include respond-to(767){
+    h2 {
+      font-size: 28px;
+      line-height: 34px;
+      margin-bottom: 8px;
+    }
+    h3 {
+      font-size: 22px;
+      line-height: 28px;
+      margin-bottom: 10px;
+    }
+    h4 {
+      font-size: 18px;
+      line-height: 24px;
+    }
+    p {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.slider-caption {
+  .item-title-head{
+    .title{
+      font-size: 22px;
+      line-height: 30px;
+    }
+    .item-price{
+      font-size: 26px;
+      line-height: 30px;
+    }
+  }
+  .item-description {
+    font-size: 15px;
+    line-height: 25px;
+  }
+}
+
+//START MODULES TYPO STYLE*/
+.module-head{
+  .module-title{
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 500;
+  }
+  .module-sub-title,
+  .module-description {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+.post-item-head,
+.post-item-body {
+  .heading {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
+.testi-content-block{
+  text-align: center;
+  .title{
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .designation{
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+  }
+  .testi-content{
+    //font-size: 15px;
+    //line-height: 25px;
+    //font-weight: 400;
+  }
+}
+.news-item-block {
+  .heading {
+    line-height: 24px;
+    font-size: 18px;
+  }
+  .meta {
+    font-weight: 400;
+    font-size: 13px;
+  }
+  .short-info {
+    //line-height: 25px;
+    //font-weight: 400;
+  }
+}
+
+.membership-block {
+  .membership-price {
+    font-size: 70px;
+    line-height: 52px;
+    font-weight: 500;
+    text-align: center;
+
+    .price-before,
+    .price-after {
+      font-size: 32px;
+      line-height: 32px;
+    }
+  }
+  .membership-title {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .membership-list {
+    li {
+      text-align: center;
+      //font-size: 14px;
+      line-height: 30px;
+      //font-weight: 300;
+    }
+  }
+  .membership-link {
+    text-align: center;
+  }
+}
+
+//START PROPERTY GRIS LIST ITEM TYPO*/
+.changer-actions span.title,
+.item-filter-inputs .filter-label {
+  font-size: 13px;
+  font-weight: 400;
+}
+.item-title-head,
+.item-caption-layer {
+  .item-price,
+  .item-price-wrap {
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: 500;
+  }
+  .title {
+    @include typography(16px, 23px, 0 0 5px, 500);
+  }
+  .item-address {
+    @include typography(13px, 18px, 0, 400);
+  }
+}
+.item-media-title {
+  .item-type {
+    @include typography(13px, 13px, 0 0 8px, 500);
+  }
+  .item-price {
+    @include typography(18px, 18px, 0, 600);
+  }
+  //.title {
+    //@include typography(16px, 16px, 0 0 12px, 500);
+  //}
+  //.item-address {
+    //@include typography(14px, 14px, 0, 400);
+  //}
+}
+.item-amenities {
+  li {
+    @include typography(13px, 22px, 0, 500);
+  }
+}
+
+//START PROFILE AND AGENT DETAIL PAGE STYLE
+.agent-detail .short-info li,
+.agent-detail .personal-info li,
+.agent-list-block .short-info li {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 27px;
+}
+.agent-detail {
+  .block-title {
+    font-size: 16px;
+    line-height: 16px;
+    margin-bottom: 20px;
+  }
+  .company-media {
+    .media-heading {
+      font-weight: 400;
+      line-height: 20px;
+      margin-bottom: 6px;
+    }
+    .media-heading,
+    a {
+      font-size: 14px;
+    }
+  }
+}
+.agent-info {
+  .name {
+    @include typography(24px, 28px, 0, 500);
+  }
+  .position {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 0 0 20px;
+  }
+  @include respond-to(991){
+    .name {
+      font-size: 22px;
+      line-height: 22px;
+    }
+    .position {
+      line-height: 18px;
+      margin-bottom: 24px;
+    }
+  }
+  //@include respond-to(tablet-portrait){
+  //  .name {
+  //    font-size: 18px;
+  //    line-height: 24px;
+  //  }
+  //  .position {
+  //    line-height: 18px;
+  //    margin-bottom: 15px;
+  //  }
+  //}
+}
+
+.item-filter-title {
+  font-size: 14px;
+  //font-weight: 500;
+}
+.filter-label,
+.filter-body label,
+.range-slider-wrap label {
+  //margin: 0;
+  //font-size: 13px;
+  //font-weight: 400;
+}
+.agent-personal-info .personal-info-title {
+  font-size: 20px;
+  line-height: 20px;
+}
+
+//START PAGE TITLE AND BREADCRUMBS TYPO*/
+.page-title-wrap {
+  h1,h2,h3 {
+    margin: 0 !important;
+    font-size: 24px;
+    //line-height: 24px;
+  }
+}
+
+//START INNER PAGES STYLE
+.contact-info li .fa,
+.contact-info li i {
+  font-size: 27px;
+  text-align: center;
+}
+.contact-info {
+  li {
+    //font-size: 14px;
+    //font-weight: 400;
+  }
+  strong {
+    font-size: 15px;
+    font-weight: 500;
+  }
+}
+
+//START MODULES TYPO STYLE*/
+.ced-module-wrap {
+  p {
+    font-size: 15px;
+    line-height: 25px;
+  }
+}
+.agent-module-body {
+  .description {
+    margin: 0 0 18px;
+    //font-weight: 400;
+    //@include respond-to(tablet-portrait){
+      //font-size: 12px;
+      //line-height: 20px;
+    //}
+  }
+  .view {
+    // line-height: 14px;
+    margin: 0;
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+    //@include respond-to(tablet-portrait){
+      //font-size: 12px;
+      //line-height: 12px;
+    //}
+    i {
+      font-size: 15px;
+    }
+  }
+}
+.agent-module-body .info,
+.agent-module-media .info{
+    .name {
+      @include typography(20px, 20px, 0 0 10px, 500);
+    }
+    .company {
+      @include typography(13px, 15px, 0, 400);
+    }
+}
+
+.services-block {
+  .icon {
+    font-size: 42px;
+    //line-height: 65px;
+    text-align: center;
+  }
+  .title {
+    font-size: 20px;
+    line-height: 24px;
+    //font-weight: 400;
+  }
+  p {
+    //font-size: 15px;
+    //line-height: 25px;
+    //font-weight: 400;
+  }
+  .ser-link {
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+}
+
+.team-block {
+  .title{
+    font-size: 20px;
+    line-height: 24px;
+    //font-weight: 400;
+  }
+  .designation {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  .description{
+    //font-size: 15px;
+    //line-height: 25px;
+  }
+}
+
+.tiled-grid-block{
+  .heading{
+    font-size: 26px;
+    line-height: 26px;
+  }
+  .sub-heading{
+    font-size: 15px;
+    line-height: 15px;
+    //font-weight: 300;
+  }
+  &.v2{
+    .heading{
+      font-size: 24px;
+      line-height: 24px;
+    }
+  }
+}
+
+.filter-trigger {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 14px;
+}
+
+//START PROPERTY DETAIL PAGES TYPO*/
+#property-title-wrap {
+  .property-title,
+  .property-price {
+    @include typography(24px, 30px, 0 0 9px, 500);
+  }
+  .property-address {
+    @include typography(14px, 20px, 0, 400);
+  }
+}
+
+.property-article .article-head .heading {
+  @include typography(20px, 20px, 0, 500);
+}
+.property-detail .detail-title {
+  font-weight: 500;
+}
+.property-contact-info {
+  .position {
+    @include typography(13px, 13px, 0 0 16px, 400);
+    text-transform: uppercase;
+  }
+  .media-heading,
+  .inquire-title {
+    font-weight: 500;
+  }
+  .media-heading {
+    font-size: 18px;
+    line-height: 20px;
+    margin: 0 0 10px;
+  }
+
+  .inquire-title {
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+.article-head {
+  .head-right {
+    a {
+      font-size: 13px;
+    }
+  }
+}
+//START BLOG TYPO*/
+.blog-body {
+  .title {
+    font-size: 28px;
+    line-height: 34px;
+  }
+}
+.blog-footer {
+  .btn-read {
+    font-weight: 500;
+    font-size: 14px;
+  }
+  .author-meta,
+  .btn-read {
+    line-height: 30px;
+  }
+}
+.author-meta {
+  li {
+    font-size: 13px !important;
+    line-height: 20px !important;
+  }
+}
+.meta-tags {
+  a {
+    @include typography(13px, 1, 0 3px 3px 0, 400);
+  }
+}
+.blog-section {
+  .section-title,
+  .reply-title {
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0 0 40px;
+    @include respond-to(tablet-portrait){
+      font-size: 16px;
+      line-height: 16px;
+      margin: 0 0 28px;
+    }
+  }
+}
+.blog-post-nav {
+  a {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  span {
+    @include typography(14px, 14px, 0 0 5px, 400);
+  }
+}
+.blog-author {
+  .heading {
+    font-size: 18px;
+    line-height: 18px;
+    margin: 0 0 5px;
+  }
+}
+.comments-block {
+  .heading {
+    @include typography(16px, 20px, 0, 500);
+    @include respond-to(767){
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+  small {
+    font-size: 13px;
+  }
+}
+.comment-actions {
+  a {
+    @include typography(13px, 13px, 0, 400);
+  }
+}
+//START WIDGETS TYPO STYLE*/
+.widget_agent_contact {
+  .name {
+    font-weight: 500;
+  }
+  li {
+    line-height: 20px;
+  }
+}
+.widget_contact {
+  li{
+    //font-size: 14px;
+    //line-height: 20px;
+    //font-weight: 500;
+  }
+  .phone {
+    font-weight: 400;
+  }
+  .view {
+    font-size: 13px;
+    line-height: 13px;
+  }
+}
+.widget_categories,
+.widget_pages,
+.widget_archive,
+.widget_meta,
+.widget_recent_posts {
+  li{
+    @include typography(14px, 18px, 0 0 12px 0, 500);
+    //@include respond-to(tablet-portrait){
+    //  font-size: 12px;
+    //  line-height: 14px;
+    //}
+    li {
+      font-weight: 400;
+      margin-bottom: 8px;
+    }
+  }
+}
+.widget_recent_posts {
+  .post-date {
+    font-weight: 400;
+    font-size: 13px ;
+  }
+}
+//.widget{
+  .widget-title{
+    font-size: 14px;
+    line-height: 14px;
+    margin: 0;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+//}
+.widget_tags {
+  .tagcloud {
+    a {
+      font-size: 13px;
+      line-height: 22px;
+      font-weight: 500;
+      margin: 0 5px 5px 0;
+    }
+  }
+}
+
+.widget_media_list{
+  .price,
+  .media-heading {
+    font-size: 14px;
+  }
+  .price {
+    line-height: 14px;
+    margin: 0 0 6px;
+    font-weight: 500;
+  }
+  .media-heading {
+    line-height: 20px;
+    margin: 0 0 6px;
+    font-weight: 500;
+  }
+  address,
+  .amenities p {
+    font-size: 13px;
+  }
+  address {
+    line-height: 13px;
+    margin: 0 0 17px;
+    font-weight: 400;
+
+  }
+  .amenities p {
+    line-height: 15px;
+    margin: 0 0 6px;
+    font-weight: 400;
+  }
+}
+.widget_calendar {
+  caption {
+    text-align: center;
+    //border-bottom: 1px solid $gray-dd;
+    font-weight: 600;
+  }
+}
+.widget_calculate {
+  .morg-result {
+    h3 {
+      font-size: 16px;
+      font-weight: 400;
+    }
+    .show-morg {
+      font-size: 18px;
+      line-height: 20px;
+    }
+  }
+  .morg-summery {
+    .result-title {
+      font-weight: 500;
+    }
+    .result-value {
+      font-weight: 400;
+    }
+    .result-title,
+    .result-value {
+      font-size: 14px;
+    }
+  }
+}
+//START DASHBOARD TYPO*/
+//.board-panel-menu > li a {
+//  font-weight: 400;
+//}
+.dashboard-title-head .head-title {
+  @include typography(16px, 24px, 0, 500);
+  text-transform: uppercase;
+}
+.block-head .head-title {
+  @include typography(16px, 20px, 0, 500);
+}
+
+.media-drag-drop {
+  text-align: center;
+  .fa {
+    font-size: 42px;
+  }
+  .drag-title {
+    font-weight: 400;
+    font-size: 28px;
+  }
+}
+.payment-title {
+  font-size: 16px;
+  margin-bottom: 10px !important;
+}
+.payment-taber {
+  .tab {
+    text-align: center;
+    font-size: 13px;
+    font-weight: 500;
+    .fa {
+      font-size: 18px;
+    }
+    p {
+      line-height: 14px;
+    }
+  }
+}
+.pkg-block {
+  .block-title{
+    font-size: 13px;
+    line-height: 13px;
+    font-weight: 500;
+  }
+  .pkg-value {
+    font-size: 14px;
+    font-weight: 400;
+    strong {
+      font-weight: 500;
+    }
+  }
+  .valid-text {
+    font-weight: 300;
+    font-size: 13px;
+  }
+}
+.pkg-block-count {
+  .counter-bottom {
+    font-size: 16px;
+    font-weight: 500;
+  }
+}
+//.footer-widget{
+//  .widget-title{
+//    font-size: 14px;
+//    line-height: 14px;
+//    margin: 0;
+//    font-weight: 500;
+//    text-transform: uppercase;
+//  }
+//}
+
+//START FOOTER TYPO*/
+.footer-copyright{
+  p{
+    margin: 0;
+    //@include typography(14px, 14px, 0, 400);
+  }
+}
+
+
+// WP CLASSES TYPO */
+.wp-caption p.wp-caption-text {
+  font-size: 13px;
+  line-height: 13px;
+  font-style: italic;
+}

@@ -1,0 +1,174 @@
+//typo
+$font-primary: 'Roboto', sans-serif;
+$font-secondary: 'Montserrat', sans-serif;
+$font-awesome:'FontAwesome';
+
+//brad color
+$brand-primary:         #21cdec !default; //#3d90b7 !default; //#8bc34a !default; // #337ab7
+$brand-secondary:       #ffa200 !default;
+$brand-success:         #85c341 !default;
+$brand-info:            #34b2e4 !default;
+$brand-warning:         #f0ad4e !default;
+$brand-danger:          #c31b1b !default;
+
+$brand-grey:            #4b4b4b !default; //#4f5962 !default;
+$brand-grey-light:      #a5a5a5 !default; //#a0a0a0 !default; //#949ca5 !default;
+$brand-grey-lighter:    #bdbdbd !default; //#d8dce1 !default;
+
+//colors
+$color-primary:           $brand-primary !default;
+$color-secondary:         $brand-secondary !default;
+$color-success:           $brand-success !default;
+$color-info:              $brand-info !default;
+$color-warning:           $brand-warning !default;
+$color-danger:            $brand-danger !default;
+
+$color-white:             #fff !default;
+$color-black:             #000 !default;
+
+$color-grey:              $brand-grey !default;
+$color-grey-light:        $brand-grey-light !default;
+$color-grey-lighter:      $brand-grey-lighter !default;
+$color-border:            #dbdbdb !default;
+
+
+$color-primary-hover:     darken($color-primary,5%) !default;
+$color-secondary-hover:   darken($color-secondary,5%) !default;
+
+
+
+$text-color:              #636363 !default;//#727272 !default; //#656565 !default; //#2c2c2c !default; //$brand-grey;
+$text-light-color:        lighten(#636363, 35%) !default;
+$text-lighter-color:      lighten(#636363, 45%) !default;
+
+$title-color:             #2c2c2c !default;
+$sub-text-color:          #9b9b9b; //#67757c;//$brand-grey-light;
+$address-color:           #808080 !default;
+$item-foot-color:         #808080 !default;
+
+
+$text-default-color:      #d7dce1 !default;
+$text-primary-color:      $color-primary;
+$text-success-color:      $color-success;
+$text-info-color:         $color-info;
+$text-danger-color:       $color-danger;
+
+$body-color:              #2c2c2c !default;
+
+//Bg colors
+$bg-primary:                $brand-primary !default;
+$bg-secondary:              $brand-secondary !default;
+$bg-success:                $brand-success !default;
+$bg-warning:                $brand-warning !default;
+$bg-info:                   $brand-info !default;
+$bg-danger:                 $brand-danger !default ;
+
+$bg-body:                   #F6F6F6 !default; //#f7f8f9 !default;
+$bg-footer:                 #282828 !default;
+$bg-footer-copyright:       #202020 !default;
+$bg-mobile-panel:           #242424 !default;
+$bg-mobile-menu-child:      #fefefe !default;
+$bg-drag-drop:              #f7f8f9 !default;
+$bg-dashboard-panel:        #bcbdba !default;
+$bg-header-search:          #e9edef !default;
+$bg-call-to-action:         #1A1A1A !default;
+$bg-overlay-dark:           #222 !default;
+
+$bg-grey:                   $brand-grey !default;
+$bg-grey-light:             $brand-grey-light !default;
+$bg-grey-lighter:           $brand-grey-lighter !default;
+
+
+//border colors
+$borders-default-color:     $color-border;
+$borders-light-color:       lighten($color-border,6%);
+$borders-lighter-color:     lighten($color-border,10%);
+
+$border-primary-color:      $color-primary;
+$border-secondary-color:    $color-secondary;
+
+//input borders color
+$input-color-placeholder:   $brand-grey-light;
+$input-border-color:        $color-border;
+
+//social icons colors
+//$social-icons-color:        $brand-grey-light;
+$social-icons-color:        #c8c8c8 !default;
+
+//breadcrumb colors
+$breadcrumb-color:          #cdcdcd !default;
+
+// line height
+//$heading-line-hright: ;
+$line-height-text: 22px;
+$line-height-body: 1.42857143;
+
+//Buttons
+$btn-font-weight:                normal !default;
+
+$btn-default-color:              #333 !default;
+$btn-default-bg:                 #fff !default;
+$btn-default-border:             #ccc !default;
+
+$btn-primary-color:              #fff !default;
+$btn-primary-bg:                 $brand-primary !default;
+$btn-primary-border:             darken($btn-primary-bg, 5%) !default;
+
+$btn-success-color:              #fff !default;
+$btn-success-bg:                 $brand-success !default;
+$btn-success-border:             darken($btn-success-bg, 5%) !default;
+
+$btn-info-color:                 #fff !default;
+$btn-info-bg:                    $brand-info !default;
+$btn-info-border:                darken($btn-info-bg, 5%) !default;
+
+$btn-warning-color:              #fff !default;
+$btn-warning-bg:                 $brand-warning !default;
+$btn-warning-border:             darken($btn-warning-bg, 5%) !default;
+
+$btn-danger-color:               #fff !default;
+$btn-danger-bg:                  $brand-danger !default;
+$btn-danger-border:              darken($btn-danger-bg, 5%) !default;
+
+$btn-link-disabled-color:        $color-grey-light !default;
+
+//alerts
+$alert-success-bg: 			$brand-success !default;
+$alert-success-border: 		$brand-success !default;
+$alert-success-text:	    $brand-success !default;
+
+$alert-info-bg:				$brand-info !default;
+$alert-info-border:			$brand-info !default;
+$alert-info-text:			$brand-info !default;
+
+$alert-warning-bg:			$brand-warning !default;
+$alert-warning-border:		$brand-warning !default;
+$alert-warning-text:		$brand-warning !default;
+
+$alert-danger-bg: 			$brand-danger !default;
+$alert-danger-border:		$brand-danger !default;
+$alert-danger-text:			$brand-danger !default;
+
+//labels
+
+
+
+// Social Media Colors
+// -----------------------------------------------------------
+$facebook:      #506dab !default;
+$twitter:       #00aced !default;
+$pinterest:     #cb2027 !default;
+$instagram:     #517fa4 !default;
+$google-plus:   #dd4b39 !default;
+$linkedin:      #007bb6 !default;
+$youtube:       #bb0000 !default;
+$dribbble:      #ea4c89 !default;
+$foursquare:    #0072b1 !default;
+$flickr:        #ff0084 !default;
+$vimeo:         #aad450 !default;
+$tumblr:        #32506d !default;
+$rss:           #FF6600 !default;
+$email:         #ccc !default;
+$apple:         #999 !default;
+$android:       #A4C639 !default;
+$windws:        #2672EC !default;

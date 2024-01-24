@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Habro - Vacation and Home Rentals - HTML5 Template</title>
+    <!-- meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="habro">
+    <meta name="description" content="Habro is a html template for vacation and home rentals.">
+    <meta name="author" content="mazaajthemes">
+
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
+    <link href="css/bootstrap-select.css" rel="stylesheet" type="text/css"/>
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    <link href="css/owl.carousel.min.css" rel="stylesheet" type="text/css"/>
+    <link href="css/jquery-ui.css" rel="stylesheet" type="text/css"/>
+    <link href="css/magnific-popup.css" rel="stylesheet" type="text/css"/>
+    <link href="css/main.css" rel="stylesheet" type="text/css"/>
+    <link href="css/styling-options.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<a href="#" class="btn btn-primary btn-scrollup"><i class="fa fa-angle-up"></i></a>
+    <!--start header area-->
+    <div class="header-area">
+        <!--start mobile header-->
+        <div class="mobile-header">
+            <div class="container">
+                <div class="mobile-header-inner">
+                    <!--start nav-->
+                    <div class="mobile-header-nav">
+                        <span class="mobile-nav-trigger"><i class="fa fa-navicon"></i></span>
+                        <div class="mobile-nav-dropdown"></div>
+                    </div>
+                    <!--end nav-->
+                    <!--start logo-->
+                    <div class="mobile-header-logo">
+                        <a href="index.html"><img src="http://placehold.it/100x30" width="100" height="30" alt="logo"></a>
+                    </div>
+                    <!--end logo-->
+                    <!--start header right-->
+                    <div class="mobile-header-user">
+                        <!--<span class="user-icon"><i class="fa fa-user"></i></span>-->
+                        <span class="user-icon"><img src="http://placehold.it/36x36" alt="profile image" class="img-circle"
+                                                     width="36" height="36"></span>
+                        <div class="account-dropdown">
+                            <ul>
+                                <li><a href="dashboard-create-listing.html"> <i class="fa fa-plus-circle"></i>Create Listing</a>
+                                </li>
+                                <li><a href="#" data-toggle="modal" data-target=".login-modal"> <i class="fa fa-user"></i>
+                                    Log in / Register </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--end header right-->
+                </div>
+            </div>
+        </div>
+        <!--end mobile header-->
+    </div>
+    <!--end header area-->
+    <!--start dashboard area-->
+    <main id="dashboard-body-area">
+
+        <!-- start dashboard panel -->
+        <div class="dashboard-panel">
+            <div class="dashboard-bar">
+                <div class="user-image-block">
+                    <div class="user-image">
+                        <img src="http://placehold.it/130x130" class="img-circle" alt="Benjamin Combs">
+                    </div>
+                    <p class="user-title">Benjamin Combs</p>
+                </div>
+                <ul class="board-panel-menu">
+                    <li><a href="dashboard-account.html"><i class="fa fa-home"></i>Dashboard</a></li>
+                    <li><a href="dashboard-account.html"><i class="fa fa-user-o"></i> Profile</a></li>
+                    <li class="active"><a href="dashboard-listing.html"><i class="fa fa-th-list"></i>My Listings</a></li>
+                    <li><a href="dashboard-create-listing.html"><i class="fa fa-plus-square"></i>Create
+                        Listings</a>
+                        <ul class="sub-menu">
+                            <li><a href="dashboard-membership-packages.html"> <i class="fa fa-angle-right"></i> Membership
+                                Packages</a></li>
+                            <li><a href="dashboard-payment.html"> <i class="fa fa-angle-right"></i> Payment</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="dashboard-change-password.html"><i class="fa fa-lock"></i>Change Password</a></li>
+                    <li><a href="#"><i class="fa fa-sign-out"></i>Log out</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- end dashboard panel -->
+        <!--start dashboard right area-->
+        <div class="dashboard-right">
+            <div class="dashboard-title-head white-bg">
+                <h2 class="head-title">My Listing</h2>
+                <div class="head-right">
+                    <a href="index.html" class="visit-site">Visit site</a>
+                </div>
+            </div>
+            <div class="dashboard-content-area">
+                <div class="dashboard-content-head">
+                    <div class="list-search-sort">
+                        <div class="search-sort-left">
+                            <form>
+                                <div class="single-input-search">
+                                    <input class="form-control" placeholder="Search listing" type="text">
+                                    <button type="submit"></button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="search-sort-right">
+                            <div class="sort-tab text-right">
+                                <span class="title">Sort by</span>
+                                <select class="selectpicker" title="Default Order" data-live-search-style="begins"
+                                        data-live-search="false">
+                                    <option>Relevance</option>
+                                    <option>Relevance</option>
+                                    <option>Relevance</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="view-changer-bar white-bg">
+                        <ul class="changer-nav">
+                            <li class="active"><a href="#">All</a></li>
+                            <li><a href="#">Published</a></li>
+                            <li><a href="#">Pending</a></li>
+                            <li><a href="#">Expired</a></li>
+                            <li><a href="#">Draft</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="ced-alert-block">
+                    <p>You don’t have any listing at this moment</p>
+                    <a href="dashboard-create-listing.html" class="btn btn-secondary">Add a new listing</a>
+                </div>
+                <div class="listing-area">
+                    <div class="item-list-wrap item-list-view">
+                        <div class="item-wrap">
+                            <div class="media property-item fave-item">
+                                <div class="media-left">
+                                    <div class="item-media-thumb">
+                                        <a href="#">
+                                            <img src="http://placehold.it/330x220" alt="Thumb" width="330" height="220">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="media-body item-body">
+                                    <div class="item-body-inner">
+                                        <div class="item-body-left">
+                                            <div class="item-title-head">
+                                                <div class="title-head-left">
+                                                    <div class="item-price-wrap">
+                                                        <h3 class="item-price">$375/mo</h3>
+                                                        <span class="label-wrap"><span
+                                                                class="label-status label label-success">For Sale</span></span>
+                                                    </div>
+                                                    <h4 class="title"> Apartment for rent </h4>
+                                                    <address class="item-address"><i class="fa fa-map-marker"></i> Reno Pl,
+                                                        San Francisco, CA 94133
+                                                    </address>
+                                                </div>
+                                            </div>
+                                            <ul class="item-amenities">
+                                                <li><i class="fa fa-hotel"></i> 0 Bedrooms</li>
+                                                <li><i class="fa fa-s15"></i> 0 Baths</li>
+                                                <li>2,400 sqft</li>
+                                                <li class="item-type"> Property Type</li>
+                                            </ul>
+                                        </div>
+                                        <div class="item-body-right">
+                                            <div class="fave-item-actions">
+                                                <a href="#" class="btn btn-primary">Set as Featured</a>
+                                                <button type="button" class="btn btn-white dropdown-toggle"
+                                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i
+                                                        class="fa fa-angle-down"></i></button>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="#"><i class="fa fa-edit fa-right-8"></i> Edit</a></li>
+                                                    <li><a href="#"><i class="fa fa-close fa-right-8"></i> Delete</a></li>
+                                                    <li><a href="#"><i class="fa fa-upload fa-right-8"></i> Resubmit</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- property item favourite-->
+                        <div class="item-wrap">
+                            <div class="media property-item fave-item">
+                                <div class="media-left">
+                                    <div class="item-media-thumb">
+                                        <a href="#">
+                                            <img src="http://placehold.it/330x220" alt="Thumb" width="330" height="220">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="media-body item-body">
+                                    <div class="item-body-inner">
+                                        <div class="item-body-left">
+                                            <div class="item-title-head">
+                                                <div class="title-head-left">
+                                                    <div class="item-price-wrap">
+                                                        <h3 class="item-price">$375/mo</h3>
+                                                        <span class="label-wrap"><span
+                                                                class="label-status label label-success">For Sale</span></span>
+                                                    </div>
+                                                    <h4 class="title"> Apartment for rent </h4>
+                                                    <address class="item-address"><i class="fa fa-map-marker"></i> Reno Pl,
+                                                        San Francisco, CA 94133
+                                                    </address>
+                                                </div>
+                                            </div>
+                                            <ul class="item-amenities">
+                                                <li><i class="fa fa-hotel"></i> 0 Bedrooms</li>
+                                                <li><i class="fa fa-s15"></i> 0 Baths</li>
+                                                <li>2,400 sqft</li>
+                                                <li class="item-type"> Property Type</li>
+                                            </ul>
+                                        </div>
+                                        <div class="item-body-right">
+                                            <div class="fave-item-actions">
+                                                <a href="#" class="btn btn-primary">Set as Featured</a>
+                                                <button type="button" class="btn btn-white dropdown-toggle"
+                                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i
+                                                        class="fa fa-angle-down"></i></button>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="#"><i class="fa fa-edit fa-right-8"></i> Edit</a></li>
+                                                    <li><a href="#"><i class="fa fa-close fa-right-8"></i> Delete</a></li>
+                                                    <li><a href="#"><i class="fa fa-upload fa-right-8"></i> Resubmit</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- property item favourite-->
+                        <div class="item-wrap">
+                            <div class="media property-item fave-item">
+                                <div class="media-left">
+                                    <div class="item-media-thumb">
+                                        <a href="#">
+                                            <img src="http://placehold.it/330x220" alt="Thumb" width="330" height="220">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="media-body item-body">
+                                    <div class="item-body-inner">
+                                        <div class="item-body-left">
+                                            <div class="item-title-head">
+                                                <div class="title-head-left">
+                                                    <div class="item-price-wrap">
+                                                        <h3 class="item-price">$375/mo</h3>
+                                                        <span class="label-wrap"><span
+                                                                class="label-status label label-success">For Sale</span></span>
+                                                    </div>
+                                                    <h4 class="title"> Apartment for rent </h4>
+                                                    <address class="item-address"><i class="fa fa-map-marker"></i> Reno Pl,
+                                                        San Francisco, CA 94133
+                                                    </address>
+                                                </div>
+                                            </div>
+                                            <ul class="item-amenities">
+                                                <li><i class="fa fa-hotel"></i> 0 Bedrooms</li>
+                                                <li><i class="fa fa-s15"></i> 0 Baths</li>
+                                                <li>2,400 sqft</li>
+                                                <li class="item-type"> Property Type</li>
+                                            </ul>
+                                        </div>
+                                        <div class="item-body-right">
+                                            <div class="fave-item-actions">
+                                                <a href="#" class="btn btn-primary">Set as Featured</a>
+                                                <button type="button" class="btn btn-white dropdown-toggle"
+                                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i
+                                                        class="fa fa-angle-down"></i></button>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="#"><i class="fa fa-edit fa-right-8"></i> Edit</a></li>
+                                                    <li><a href="#"><i class="fa fa-close fa-right-8"></i> Delete</a></li>
+                                                    <li><a href="#"><i class="fa fa-upload fa-right-8"></i> Resubmit</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- property item favourite-->
+                        <div class="item-wrap">
+                            <div class="media property-item fave-item">
+                                <div class="media-left">
+                                    <div class="item-media-thumb">
+                                        <a href="#">
+                                            <img src="http://placehold.it/330x220" alt="Thumb" width="330" height="220">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="media-body item-body">
+                                    <div class="item-body-inner">
+                                        <div class="item-body-left">
+                                            <div class="item-title-head">
+                                                <div class="title-head-left">
+                                                    <div class="item-price-wrap">
+                                                        <h3 class="item-price">$375/mo</h3>
+                                                        <span class="label-wrap"><span
+                                                                class="label-status label label-success">For Sale</span></span>
+                                                    </div>
+                                                    <h4 class="title"> Apartment for rent </h4>
+                                                    <address class="item-address"><i class="fa fa-map-marker"></i> Reno Pl,
+                                                        San Francisco, CA 94133
+                                                    </address>
+                                                </div>
+                                            </div>
+                                            <ul class="item-amenities">
+                                                <li><i class="fa fa-hotel"></i> 0 Bedrooms</li>
+                                                <li><i class="fa fa-s15"></i> 0 Baths</li>
+                                                <li>2,400 sqft</li>
+                                                <li class="item-type"> Property Type</li>
+                                            </ul>
+                                        </div>
+                                        <div class="item-body-right">
+                                            <div class="fave-item-actions">
+                                                <a href="#" class="btn btn-primary">Set as Featured</a>
+                                                <button type="button" class="btn btn-white dropdown-toggle"
+                                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i
+                                                        class="fa fa-angle-down"></i></button>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="#"><i class="fa fa-edit fa-right-8"></i> Edit</a></li>
+                                                    <li><a href="#"><i class="fa fa-close fa-right-8"></i> Delete</a></li>
+                                                    <li><a href="#"><i class="fa fa-upload fa-right-8"></i> Resubmit</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- property item favourite-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end dashboard right area-->
+    </main>
+    <!--end dashboard area-->
+    <!--Start Scripts-->
+    <script  src="js/jquery.js"></script>
+    <script  src="js/jquery.validate.min.js"></script>
+    <script  src="js/bootstrap.min.js"></script>
+    <script  src="js/bootstrap-select.js"></script>
+    <script  src="js/jquery.easing.1.3.js"></script>
+    <script  src="js/jquery-ui.js"></script>
+    <script  src="js/isotope.pkgd.min.js"></script>
+    <script  src="js/modernizr.custom.js"></script>
+    <script  src="js/owl.carousel.min.js"></script>
+    <script  src="js/jquery.magnific-popup.min.js"></script>
+    <script  src="js/custom.js"></script>
+</body>
+</html>

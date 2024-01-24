@@ -1,0 +1,65 @@
+#dashboard-body-area{}
+
+// dashboard sidebar
+// ------------------------------------------------------------------------ //
+.dashboard-panel {
+  position: fixed;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  // @include respond-to(tablet-landscape-desktop) {
+  //   display: block;
+  //   position: relative;
+  //   margin: 0 30px;
+  //   width: auto;
+  //   right: auto;
+  // }
+}
+.dashboard-right{
+  width: 100%;
+  padding-left: 250px;
+}
+@include respond-to(1199) {
+  .dashboard-panel {
+    width: 205px;
+  }
+  .dashboard-right{
+    padding-left: 205px;
+  }
+}
+@include respond-to(991) {
+  .dashboard-panel {
+    display: none;
+  }
+  .dashboard-right{
+    padding: 0;
+  }
+}
+// header
+// ------------------------------------------------------------------------ //
+.header-area{
+  position: relative;
+  box-shadow: 0 5px 5px 0 rgba($color-black, .15);
+  z-index: 5;
+}
+
+// habro content and sidebar area layout
+.ced-content-area{
+  @include respond-to(large-desktop){
+    width: 70%;
+  }
+  @include respond-to(medium-desktop){
+    width: 68%;
+  }
+  @include respond-to(991){
+    margin-bottom: 50px;
+  }
+}
+.ced-sidebar-area{
+  @include respond-to(large-desktop){
+    width: 30%;
+  }
+  @include respond-to(medium-desktop){
+    width: 32%;
+  }
+}

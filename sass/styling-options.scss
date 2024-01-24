@@ -1,0 +1,168 @@
+/*-------start habro styling options--------*/
+@import 'compass';
+@import 'variables.scss';
+@import 'mixings.scss';
+@import "extends.scss";
+@import 'group-classes';
+
+body {
+  font-size: 14px;
+  //line-height: $line-height-body;
+  line-height: 24px;
+  background-color: $bg-body;
+  font-weight: 400;
+  color: $body-color;
+  text-align: left;
+  font-family: $font-primary;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  @include respond-to(tablet-portrait) {
+    //font-size: 12px;
+    //line-height: 20px;
+  }
+}
+
+/*Start headers style*/
+.header-transparent .header-type-1.header-sticky .header-body,
+.header-transparent .header-type-3.header-sticky .header-body {
+  background-color: $bg-primary;
+}
+
+.header-type-1 {
+  .header-body {
+    background-color: $bg-primary;
+  }
+  .navi > ul > li > a {
+    color: $color-white;
+  }
+}
+
+.header-type-2 {
+  .header-right .btn-listing {
+    border-color: $color-primary;
+    color: $color-primary;
+    &:hover {
+      color: $color-white;
+    }
+  }
+}
+
+.header-type-3 {
+  .header-right .btn-listing {
+    background-color: lighten($bg-grey, 20%);
+    color: $color-white;
+    &:hover {
+      background-color: $bg-grey;
+    }
+  }
+  .header-right .btn-login-register {
+    color: $text-color;
+    &:hover {
+      color: $color-primary;
+    }
+  }
+}
+
+.header-type-2,
+.header-type-3 {
+  .header-body {
+    background-color: $color-white;
+  }
+  .header-right .btn-login-register {
+    color: $text-color;
+    &:hover {
+      color: $color-primary;
+    }
+  }
+}
+
+.header-right {
+  .btn-listing {
+    border-color: $color-white;
+    background-color: rgba($color-white, .3);
+    color: $color-white;
+    &:hover {
+      background-color: $bg-primary;
+      //border-color: $color-primary;
+      color: $color-white;
+    }
+  }
+}
+
+.navi > ul > li > a:before,
+.header-right .btn-login-register:before {
+  background-color: darken($bg-primary, 10%);
+}
+
+.account-dropdown ul {
+  li.active,
+  li:hover {
+    > a {
+      background-color: $bg-primary;
+    }
+  }
+  .sub-menu {
+    background-color: lighten($bg-primary, 10%);
+    li.active,
+    li:hover {
+      > a {
+        color: $color-white;
+        background-color: $bg-primary;
+      }
+    }
+    a {
+      //padding-top: 12px;
+      //padding-bottom: 12px;
+      color: $text-color;
+    }
+  }
+}
+
+.mobile-header {
+  background-color: $bg-primary;
+}
+
+/*Start Call to action style*/
+#call-to-action {
+  background-color: $bg-call-to-action;
+}
+
+/*Start footer style*/
+#footer {
+  background-color: $bg-footer;
+}
+
+#footer p {
+  color: $color-white;
+}
+
+/*Start dashboard style*/
+.dashboard-panel {
+  background-color: #282828;
+}
+
+.board-panel-menu {
+  > li {
+    border-color: rgba($color-white, .1);
+    a {
+      color: $color-white;
+    }
+  }
+  li.active,
+  li:hover {
+    > a {
+      background-color: darken(#282828, 3%);
+    }
+  }
+  .sub-menu {
+    background-color: darken(#282828, 8%);
+    //li.active,
+    //li:hover{
+    //  > a{
+    //    //color: $color-white;
+    //    background-color: darken(#282828,10%);
+    //  }
+    //}
+  }
+}

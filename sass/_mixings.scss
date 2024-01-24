@@ -1,0 +1,267 @@
+// * Responsive mixin. The media breakpoints are as defined
+// * in the twitter bootstrap framework:
+// *
+// * - phone
+// * - tablet-portrait
+// * - tablet-landscape-desktop
+// * - large-desktop
+// *
+// * Additional parameters for tagetting retina and non-retina
+// * devices
+// *
+// * - retina
+// * - non-retina
+// *
+// * Moreover, a specific value in px can be passed which is
+// * used to generate a max-width media query.
+
+@mixin respond-to($media) {
+  // mini phones and down */
+  @if $media == mini-phone {
+    @media (max-width: 321px) { @content; }
+  }
+    // Landscape phones and down */
+  @else if $media == phone {
+    @media (max-width: 481px) { @content; }
+  }
+    // Landscape phone to portrait tablet */
+  @else if $media == tablet-portrait {
+    @media (max-width: 767px) {@content; }
+  }
+    // Portrait tablet to landscape and desktop */
+  @else if $media == tablet-landscape-desktop {
+    @media (min-width: 768px) and (max-width: 991px) { @content; }
+  }
+    // Medium desktop */
+  @else if $media == medium-desktop {
+    @media (min-width: 992px) and (max-width: 1199px) { @content; }
+  }
+    // Large desktop */
+  @else if $media == large-desktop {
+    @media (min-width: 1200px) { @content; }
+  }
+    // Non-Retina
+  @else if $media == non-retina {
+    @media screen and (-webkit-max-device-pixel-ratio: 1) { @content; }
+  }
+    // Retina Only
+  @else if $media == retina {
+    @media screen and (-webkit-min-device-pixel-ratio: 2) { @content; }
+  }
+    // Specific max width
+  @else {
+    @media only screen and (max-width: #{$media}px) { @content; }
+  }
+}
+
+//@mixin typography($font_size, $line_height, $margin, $font_weight, $transform, $position) {
+@mixin typography($font_size, $line_height, $margin, $font_weight) {
+  font-size: $font_size;
+  line-height: $line_height;
+  margin: $margin;
+  font-weight: $font_weight;
+  //text-transform: $transform;
+  //text-align: $position;
+}
+
+@mixin blockquote($text_align, $border_style, $border_width) {
+  text-align: $text_align;
+  border-style: $border_style;
+  border-width: $border_width;
+}
+@mixin thumb_content_padding($pad) {
+  padding-top: $pad;
+  padding-bottom: $pad;
+
+}
+@mixin list-col($cols) {
+  columns: $cols;
+  -webkit-columns: $cols;
+  -moz-columns: $cols;
+}
+
+@mixin animation($str) {
+  -webkit-animation: #{$str};
+  //-moz-animation: #{$str};
+  //-ms-animation: #{$str};
+  //-o-animation: #{$str};
+  animation: #{$str};
+}
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  //filter: alpha(opacity=$opacity-ie); //IE8
+}
+
+// Transformations
+@mixin scale($ratio...) {
+  -webkit-transform: scale($ratio);
+  //-ms-transform: scale($ratio); // IE9 only
+  //-o-transform: scale($ratio);
+  transform: scale($ratio);
+}
+
+@mixin scaleX($ratio) {
+  -webkit-transform: scaleX($ratio);
+  //-ms-transform: scaleX($ratio); // IE9 only
+  //-o-transform: scaleX($ratio);
+  transform: scaleX($ratio);
+}
+@mixin scaleY($ratio) {
+  -webkit-transform: scaleY($ratio);
+  //-ms-transform: scaleY($ratio); // IE9 only
+  //-o-transform: scaleY($ratio);
+  transform: scaleY($ratio);
+}
+@mixin skew($x, $y) {
+  -webkit-transform: skewX($x) skewY($y);
+  //-ms-transform: skewX($x) skewY($y); // See https://github.com/twbs/bootstrap/issues/4885; IE9+
+  //-o-transform: skewX($x) skewY($y);
+  transform: skewX($x) skewY($y);
+}
+@mixin translate($x, $y) {
+  -webkit-transform: translate($x, $y);
+  //-ms-transform: translate($x, $y); // IE9 only
+  //-o-transform: translate($x, $y);
+  transform: translate($x, $y);
+}
+@mixin translate3d($x, $y, $z) {
+  -webkit-transform: translate3d($x, $y, $z);
+  transform: translate3d($x, $y, $z);
+}
+@mixin rotate($degrees) {
+  -webkit-transform: rotate($degrees);
+  //-ms-transform: rotate($degrees); // IE9 only
+  //-o-transform: rotate($degrees);
+  transform: rotate($degrees);
+}
+@mixin rotateX($degrees) {
+  -webkit-transform: rotateX($degrees);
+  //-ms-transform: rotateX($degrees); // IE9 only
+  //-o-transform: rotateX($degrees);
+  transform: rotateX($degrees);
+}
+@mixin rotateY($degrees) {
+  -webkit-transform: rotateY($degrees);
+  //-ms-transform: rotateY($degrees); // IE9 only
+  //-o-transform: rotateY($degrees);
+  transform: rotateY($degrees);
+}
+@mixin perspective($perspective) {
+  -webkit-perspective: $perspective;
+  //-moz-perspective: $perspective;
+  perspective: $perspective;
+}
+@mixin perspective-origin($perspective) {
+  -webkit-perspective-origin: $perspective;
+  //-moz-perspective-origin: $perspective;
+  perspective-origin: $perspective;
+}
+@mixin transform-origin($origin) {
+  -webkit-transform-origin: $origin;
+  //-moz-transform-origin: $origin;
+  //-ms-transform-origin: $origin; // IE9 only
+  transform-origin: $origin;
+}
+
+@mixin translate3d_scale ($x,$deg) {
+  @include transform(translate3d($x, 0, 0) rotate(#{$deg}deg));
+
+  -webkit-transform: translate3d($x, 0, 0) rotate(#{$deg}deg);
+  //-ms-transform: translate3d($x, 0, 0) rotate(#{$deg}deg); // IE9 only
+  //-o-transform: translate3d($x, 0, 0) rotate(#{$deg}deg);
+  transform: translate3d($x, 0, 0) rotate(#{$deg}deg) ;
+}
+
+// Transitions
+
+@mixin transition($transition...) {
+  -webkit-transition: $transition;
+  //-o-transition: $transition;
+  transition: $transition;
+}
+
+@mixin transition-property($transition-property...) {
+  -webkit-transition-property: $transition-property;
+  transition-property: $transition-property;
+}
+@mixin transition-delay($transition-delay) {
+  -webkit-transition-delay: $transition-delay;
+  transition-delay: $transition-delay;
+}
+@mixin transition-duration($transition-duration...) {
+  -webkit-transition-duration: $transition-duration;
+  transition-duration: $transition-duration;
+}
+@mixin transition-timing-function($timing-function) {
+  -webkit-transition-timing-function: $timing-function;
+  transition-timing-function: $timing-function;
+}
+@mixin transition-transform($transition...) {
+  -webkit-transition: -webkit-transform $transition;
+  //-moz-transition: -moz-transform $transition;
+  //-o-transition: -o-transform $transition;
+  transition: transform $transition;
+}
+@mixin transform-origin($origin) {
+  -webkit-transform-origin: $origin;
+  //-moz-transform-origin: $origin;
+  //-ms-transform-origin: $origin; // IE9 only
+  transform-origin: $origin;
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  //-moz-border-radius: $radius;
+  //-ms-border-radius: $radius;
+  border-radius: $radius;
+}
+// Placeholder text
+@mixin placeholder($color: $input-color-placeholder) {
+  // Firefox
+  &::-moz-placeholder {
+    color: $color;
+    opacity: 1; // Override Firefox's unusual default opacity; see https://github.com/twbs/bootstrap/pull/11526
+  }
+  &:-ms-input-placeholder { color: $color; } // Internet Explorer 10+
+  &::-webkit-input-placeholder  { color: $color; } // Safari and Chrome
+}
+
+// Social Media Colors Mixn
+// -----------------------------------------------------------
+@mixin social_media_colors($social_media_color) {
+  //color: $social_media_color;
+  &:hover,
+  &:focus,
+  &:active{
+    color: $social_media_color !important;
+  }
+}
+
+@mixin social_media_bg($parent, $social_media_color) {
+  #{$parent}{
+    position: relative;
+    background-color: $social_media_color;
+    color: $color-white;
+    &:hover,
+    &:focus,
+    &:active {
+      color: $color-white;
+      background-color: darken($social_media_color, 5%) !important;
+      i {
+        animation: pulse .3s ease;
+      }
+    }
+  }
+}
+
+// [converter] $parent hack
+@mixin text-emphasis-variant($parent, $color) {
+  #{$parent} {
+    color: $color;
+  }
+  a#{$parent}:hover,
+  a#{$parent}:focus {
+    color: darken($color, 10%);
+  }
+}

@@ -1,0 +1,157 @@
+button {
+  @extend %animation-ease-out-3s;
+  i,.fa {
+
+  }
+  &:active,
+  &:hover,
+  &:focus{
+    outline: none !important;
+  }
+}
+
+.btn {
+  @extend %animation-ease-out-3s;
+  padding: 10px 20px;
+  &:active,
+  &:focus,
+  &.active,
+  &.focus {
+    box-shadow: none;
+  }
+  i,.fa{
+    @extend %animation-ease-out-3s;
+    position: relative;
+    //top: 1px;
+    //font-size: 15px;
+  }
+}
+
+// Alternate buttons
+// --------------------------------------------------
+
+.btn-default {
+  color: $color-white;
+}
+.btn-primary {
+  color: $color-white;
+}
+.btn-secondary {
+  color: $color-white;
+}
+// Success appears as green
+.btn-success {
+  color: $color-white;
+}
+// Info appears as blue-green
+.btn-info {
+  color: $color-white;
+}
+// Warning appears as orange
+.btn-warning {
+  color: $color-white;
+}
+// Danger and error appear as red
+.btn-danger {
+  color: $color-white;
+}
+
+.btn-long {
+  padding-left: 55px;
+  padding-right: 55px;
+}
+.btn-slim{
+  padding-top: 9px;
+  padding-bottom: 9px;
+}
+.btn-md-long{
+  padding-left: 30px;
+  padding-right: 30px ;
+}
+
+.btn-sm, .btn-group-sm > .btn {
+  padding: 6px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+.btn-primary {
+  &.outlined {
+    color:  $brand-primary;
+    background-color: transparent;
+    //border-color:  $brand-primary;
+    &:hover,
+    &:active {
+      color:  $color-white;
+      background-color: $brand-primary;
+      //border-color:  $brand-primary;
+    }
+  }
+}
+.btn-warning {
+  &.outlined {
+    color:  $brand-warning;
+    background-color: transparent;
+    //border-color:  $brand-warning;
+    &:hover,
+    &:active {
+      color:  $color-white;
+      background-color: $brand-warning;
+      //border-color:  $brand-warning;
+      //cursor: default;
+    }
+  }
+}
+.btn-success {
+  &.outlined {
+    color:  $brand-success;
+    background-color: transparent;
+    //border-color:  $brand-success;
+    &:hover,
+    &:active {
+      color:  $color-white;
+      background-color: $brand-success;
+      //border-color:  $brand-success;
+    }
+  }
+}
+.btn-danger {
+  &.outlined {
+    color:  $brand-danger;
+    background-color: transparent;
+    //border-color:  $brand-danger;
+    &:hover,
+    &:active {
+      color:  $color-white;
+      background-color: $brand-danger;
+      //border-color:  $brand-danger;
+    }
+  }
+}
+
+.btn.btn-white{
+  @extend .white-bg;
+  color: $text-color;
+  border-color: $borders-default-color;
+  &:hover,
+  &:focus,
+  &:active{
+    background-color: $bg-primary;
+    color: $color-white !important;
+    border-color: $color-primary;
+  }
+}
+
+.btn-group-block{
+  font-size: 0;
+  .btn {
+    margin-right: 10px;
+    &:last-child {
+      margin: 0;
+    }
+  }
+}
+
+.btn-block + .btn-block {
+  margin-top: 12px;
+}

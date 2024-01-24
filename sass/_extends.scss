@@ -1,0 +1,167 @@
+%clearfix {
+  *zoom: 1;
+  &:before, &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+// @extend width 100%;
+.full-width {
+  width: 100%;
+}
+
+// @extend border-colors;
+.border-default-color {
+  border-color: $borders-default-color;
+}
+
+// @extend .primary-color,.secondary-color;
+.primary-color {
+  color: $color-primary;
+}
+
+.secondary-color {
+  color: $color-secondary;
+}
+
+// @extend .primary-border-color,.secondary-border-color;
+.border-primary-color {
+  border-color: $color-primary;
+}
+
+.border-secondary-color {
+  border-color: $border-secondary-color;
+}
+
+// @extend .hover-effect-primary-color;
+.hover-effect-primary-color {
+  background-color: rgba($color-primary, .8);
+}
+
+// @extend .primary-color-hover,.secondary-color-hover;
+.primary-color-hover {
+  color: $color-primary-hover;
+}
+
+.secondary-color-hover {
+  color: $color-secondary-hover;
+}
+
+// @extend .primary-background,.secondary-background;
+.primary-background {
+  background-color: $bg-primary;
+}
+
+.secondary-background {
+  background-color: $bg-secondary;
+}
+
+// @extend .primary-background-hover,.secondary-background-hover;
+.primary-background-hover {
+  background-color: darken($bg-primary, 10%);
+}
+
+.secondary-background-hover {
+  background-color: darken($bg-secondary, 10%);
+}
+
+// @extend .text-default;
+.text-default {
+  color: $text-default-color;
+}
+
+// @extend .text-success;
+.text-success {
+  color: $text-success-color;
+}
+
+// @extend .text-danger;
+.text-danger {
+  color: $color-danger;
+}
+
+// @extend .text-ellipsis;
+.text-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+  text-overflow: ellipsis;
+  //display: inline-block;
+}
+
+// @extend .white-color;
+.white-color {
+  color: $color-white;
+}
+
+// @extend .white-bg;
+.white-bg {
+  background-color: $color-white;
+}
+
+// @extend .transparent-bg;
+.transparent-bg {
+  background-color: transparent !important;
+}
+
+// @extend .grey-bg;
+.grey-bg {
+  background-color: $bg-grey;
+}
+
+// @extend .grey-bg-light;
+.grey-bg-light {
+  background-color: $bg-grey-light;
+}
+
+// @extend .grey-bg-lighter;
+.grey-bg-lighter {
+  background-color: $bg-grey-lighter;
+}
+
+// @extend .white-color;
+.white-color {
+  color: $color-white;
+}
+
+// @extend .black-color;
+.black-color {
+  color: $color-black;
+}
+
+// @extend .black-bg;
+.black-bg {
+  background-color: $color-black;
+}
+
+// @extend .font-color;
+.font-color {
+  color: $text-color;
+}
+
+// @extend .display-block;
+.display-block {
+  display: block;
+}
+
+// @extend .list-none;
+.list-none {
+  list-style: none;
+}
+
+// @extend .display-inline-block;
+.display-inline-block {
+  display: inline-block;
+}
+
+.display-inline {
+  display: inline;
+}
+
+.element-shadow {
+  box-shadow: 0 1px 4px -1px rgba(0, 0, 0, 0.2);
+}

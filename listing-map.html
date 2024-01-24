@@ -1,0 +1,1627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Habro - Vacation and Home Rentals - HTML5 Template</title>
+    <!-- meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="habro">
+    <meta name="description" content="Habro is a html template for vacation and home rentals.">
+    <meta name="author" content="mazaajthemes">
+
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
+    <link href="css/bootstrap-select.css" rel="stylesheet" type="text/css"/>
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    <link href="css/owl.carousel.min.css" rel="stylesheet" type="text/css"/>
+    <link href="css/jquery-ui.css" rel="stylesheet" type="text/css"/>
+    <link href="css/magnific-popup.css" rel="stylesheet" type="text/css"/>
+    <link href="css/main.css" rel="stylesheet" type="text/css"/>
+    <link href="css/styling-options.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<a href="#" class="btn btn-primary btn-scrollup"><i class="fa fa-angle-up"></i></a>
+<!-- Login Register Modal -->
+<div class="modal fade forget-modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <button type="button" class="close btn-close" data-dismiss="modal" aria-label="Close"><i
+                    class="fa fa-close"></i></button>
+            <div class="modal-body login-block">
+                <div class="ced-taber">
+                    <ul class="tabs-nav">
+                        <li class="tab active">Reset Password</li>
+                    </ul>
+                    <div class="taber-content tab-content">
+                        <div class="tab-pane fade in active">
+                            <p>Please enter your email address or username to get new password.</p>
+                            <form id="forget-form" method="post" action="#">
+                                <div class="form-group">
+                                    <div class="icon-holder">
+                                        <input name="username" type="text" class="form-control" required
+                                               placeholder="Username">
+                                        <span class="field-icon"><i class="fa fa-user-o"></i></span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-primary btn-block">Login</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade login-modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <button type="button" class="close btn-close" data-dismiss="modal" aria-label="Close"><i
+                    class="fa fa-close"></i></button>
+            <div class="modal-body login-block">
+                <div id="login-taber" class="ced-taber">
+                    <ul class="tabs-nav">
+                        <li class="tab active">Login</li>
+                        <li class="tab">Register</li>
+                    </ul>
+                    <div class="taber-content tab-content">
+                        <div class="tab-pane fade in active">
+                            <form id="login-form" method="post" action="#">
+                                <div class="form-group">
+                                    <div class="icon-holder">
+                                        <input name="username" type="text" class="form-control" required
+                                               placeholder="Username">
+                                        <span class="field-icon"><i class="fa fa-user"></i></span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="icon-holder">
+                                        <input name="password" type="password" class="form-control" required
+                                               placeholder="Password">
+                                        <span class="field-icon"><i class="fa fa-lock"></i></span>
+                                    </div>
+                                </div>
+                                <div class="form-group clearfix">
+                                    <div class="checkbox pull-left no-margin">
+                                        <label>
+                                            <input name="remember" type="checkbox">
+                                            Remember me
+                                        </label>
+                                    </div>
+                                    <a href="#" data-dismiss="modal" data-toggle="modal" data-target=".forget-modal"
+                                       class="pull-right">Forgot password?</a>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-block">Login</button>
+                            </form>
+                            <span class="social-text text-center text-uppercase">Or login with</span>
+                            <button class="btn btn-facebook btn-block"><i class="fa fa-facebook fa-right-5"></i>
+                                Facebook
+                            </button>
+                            <button class="btn btn-twitter btn-block"><i class="fa fa-twitter fa-right-5"></i> Twitter
+                            </button>
+                            <button class="btn btn-google-plus btn-block"><i class="fa fa-google-plus fa-right-5"></i>
+                                Google Plus
+                            </button>
+                        </div>
+                        <div class="tab-pane fade">
+                            <form id="register-form" method="post" action="#">
+                                <div class="form-group">
+                                    <div class="icon-holder">
+                                        <input name="username" type="text" class="form-control" required
+                                               placeholder="Username">
+                                        <span class="field-icon"><i class="fa fa-user"></i></span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="icon-holder">
+                                        <input name="email" type="email" class="form-control" required
+                                               placeholder="Email">
+                                        <span class="field-icon"><i class="fa fa-envelope"></i></span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="icon-holder">
+                                        <input name="password" type="password" class="form-control" required
+                                               placeholder="Password">
+                                        <span class="field-icon"><i class="fa fa-lock"></i></span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="icon-holder">
+                                        <input name="rp-password" type="password" class="form-control" required
+                                               placeholder="Repeat Password">
+                                        <span class="field-icon"><i class="fa fa-lock"></i></span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-primary btn-block">Register</button>
+                                </div>
+                            </form>
+                            <span class="social-text text-center text-uppercase">Or Register with</span>
+                            <button class="btn btn-facebook btn-block"><i class="fa fa-facebook fa-right-5"></i>
+                                Facebook
+                            </button>
+                            <button class="btn btn-twitter btn-block"><i class="fa fa-twitter fa-right-5"></i> Twitter
+                            </button>
+                            <button class="btn btn-google-plus btn-block"><i class="fa fa-google-plus fa-right-5"></i>
+                                Google Plus
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--start header area-->
+<div class="header-area">
+    <!--Start Top Bar-->
+    <div class="header-top-bar hidden-xs">
+        <div class="container">
+            <div class="top-bar-inner">
+                <div class="top-bar-left">
+                    <ul class="top-contact-address">
+                        <li><i class="fa fa-phone"></i>Call us FREE +1 (800) 990 8877</li>
+                        <li><a href="#"><i class="fa fa-envelope-o"></i> info@habro.com</a></li>
+                    </ul>
+                </div>
+                <div class="top-bar-right">
+                    <ul class="crncy-lang-block">
+                        <li>
+                                <span class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                                      aria-expanded="true" role="button" id="crn-dropdown">Currency <i
+                                        class="fa fa-angle-down"></i></span>
+                            <ul class="dropdown-menu" aria-labelledby="crn-dropdown">
+                                <li>Dollars (USD)</li>
+                                <li>Euro (EU)</li>
+                            </ul>
+                        </li>
+                        <li>
+                                <span class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                                      aria-expanded="true" role="button" id="lang-dropdown">Language <i
+                                        class="fa fa-angle-down"></i></span>
+                            <ul class="dropdown-menu" aria-labelledby="lang-dropdown">
+                                <li>English</li>
+                                <li>Spanish</li>
+                                <li>Italian</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header class="header-wrap header-type-1 this-sticky nav-right">
+        <div class="header-body">
+            <div class="container">
+                <div class="header-inner table-block">
+                    <div class="header-logo">
+                        <a href="#"><img src="images/logo.png" width="128" height="30" alt="habro"></a></div>
+                    <div class="header-nav">
+                        <nav class="navi">
+                            <ul>
+                                <li><a href="#">Home</a>
+                                    <ul class="menu-dropdown">
+                                        <li><a href="#">Property Slider</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="index.html">Standard</a></li>
+                                                <li><a href="index-slider-fullscreen.html">Fullscreen</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Banner Parallax</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="index-parallax.html">Standard</a></li>
+                                                <li><a href="index-parallax-fullscreen.html">Fullscreen</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Location Map</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="index-map.html">Standard</a></li>
+                                                <li><a href="index-map-fullscreen.html">Fullscreen</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Listing</a>
+                                    <ul class="menu-dropdown">
+                                        <li><a href="#">List Layout v1</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="listing-sidebar.html">With Sidebar</a></li>
+                                                <li><a href="listing-fullwidth.html">Full Width</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">List Layout v2</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="listing-v2-sidebar.html">With Sidebar</a></li>
+                                                <li><a href="listing-v2-fullwidth.html">Full Width</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Grid Layout V1</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="listing-grid-sidebar.html">With Sidebar</a></li>
+                                                <li><a href="listing-grid-fullwidth.html">Full Width</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Grid Layout V2</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="listing-grid-layer-sidebar.html">With Sidebar</a></li>
+                                                <li><a href="listing-grid-layer-fullwidth.html">Full Width</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Parallax</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="listing-parallax.html">Standard</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Map</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="listing-map.html">Standard</a></li>
+                                                <li><a href="listing-half-map.html">Half</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Property</a>
+                                    <ul class="menu-dropdown">
+                                        <li><a href="property-detail-v1.html">Property Detail V1</a></li>
+                                        <li><a href="property-detail-v2.html">Property Detail V2</a></li>
+                                        <li><a href="property-detail-v3.html">Property Detail V3</a></li>
+                                    </ul>
+                                </li>
+                                <li class="ced-megamenu"><a href="#">Pages</a>
+                                    <ul class="ced-megamenu-wrap">
+                                        <li>
+                                            <a href="#">Column 1</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="agents-all.html">Agents List</a></li>
+                                                <li><a href="agent-single-v1.html">Agent Profile V1</a></li>
+                                                <li><a href="agent-single-v2.html">Agent Profile V2</a></li>
+                                                <li><a href="contact-us.html">Contact Us</a></li>
+                                                <li><a href="about-us.html">About Us</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">Column 2</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="login-register.html">Login and Register</a></li>
+                                                <li><a href="typography.html">Typography</a></li>
+                                                <li><a href="blog.html">Blog</a></li>
+                                                <li><a href="blog-post.html">Blog Post</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">Column 3</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="top-bars-all.html">Top Bar</a></li>
+                                                <li><a href="headers-all.html">Headers</a></li>
+                                                <li><a href="widgets.html">Widgets</a></li>
+                                                <li><a href="footers-all.html">Footers</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">Column 4</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="dashboard-account.html">Dashboard Account</a></li>
+                                                <li><a href="dashboard-listing.html">Dashboard My Listing</a></li>
+                                                <li><a href="dashboard-create-listing.html">Dashboard Create Listing</a>
+                                                </li>
+                                                <li><a href="dashboard-membership-packages.html">Dashboard Packages</a>
+                                                </li>
+                                                <li><a href="dashboard-payment.html">Dashboard Payment</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="ced-megamenu"><a href="#">Modules</a>
+                                    <ul class="ced-megamenu-wrap">
+                                        <li>
+                                            <a href="#">Column 1</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="modules/module-advanced-search.html">Advanced Search
+                                                    Module</a></li>
+                                                <li><a href="modules/module-services.html">Services Module</a></li>
+                                                <li><a href="modules/module-property-cards.html">Property Modules</a>
+                                                </li>
+                                                <li><a href="modules/module-agents.html">Agents Module</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">Column 2</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="modules/module-team.html">Team Module</a></li>
+                                                <li><a href="modules/module-partners.html">Partners Module</a></li>
+                                                <li><a href="modules/module-testimonials.html">Testimonials Module</a>
+                                                </li>
+                                                <li><a href="modules/module-packages.html">Packages Module</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">Column 3</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="modules/module-news.html">News Module</a></li>
+                                                <li><a href="modules/module-tiled-gallery.html">Tiled Gallery Module</a>
+                                                </li>
+                                                <li><a href="modules/module-blog-post.html">Blog Post</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Search Styles</a>
+                                    <ul class="menu-dropdown">
+                                        <li><a href="index.html">Header Search V1</a></li>
+                                        <li><a href="index-slider-fullscreen.html">Header Search V2</a></li>
+                                        <li><a href="index-parallax-fullscreen.html">Header Search V3</a></li>
+                                        <li><a href="index-parallax.html">Header Search V2 on Banner</a></li>
+                                        <li><a href="index.html">Advance Search v1</a></li>
+                                        <li><a href="index-map-fullscreen.html">Advance Search v2</a></li>
+                                        <li><a href="listing-sidebar.html">Advance Search In Sidebar</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="header-right">
+                        <div class="account-login">
+                            <a href="#" data-toggle="modal" data-target=".login-modal" class="btn-login-register">Log In
+                                <span>or</span> Sign Up</a>
+                            <a href="dashboard-create-listing.html" class="btn btn-listing"> Create Listing </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--start mobile header-->
+    <div class="mobile-header">
+        <div class="container">
+            <div class="mobile-header-inner">
+                <!--start nav-->
+                <div class="mobile-header-nav">
+                    <span class="mobile-nav-trigger"><i class="fa fa-navicon"></i></span>
+                    <div class="mobile-nav-dropdown"></div>
+                </div>
+                <!--end nav-->
+                <!--start logo-->
+                <div class="mobile-header-logo">
+                    <a href="index.html"><img src="http://placehold.it/100x30" width="100" height="30" alt="logo"></a>
+                </div>
+                <!--end logo-->
+                <!--start header right-->
+                <div class="mobile-header-user">
+                    <!--<span class="user-icon"><i class="fa fa-user"></i></span>-->
+                    <span class="user-icon"><img src="http://placehold.it/36x36" alt="profile image" class="img-circle"
+                                                 width="36" height="36"></span>
+                    <div class="account-dropdown">
+                        <ul>
+                            <li><a href="dashboard-create-listing.html"> <i class="fa fa-plus-circle"></i>Create Listing</a>
+                            </li>
+                            <li><a href="#" data-toggle="modal" data-target=".login-modal"> <i class="fa fa-user"></i>
+                                Log in / Register </a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!--end header right-->
+            </div>
+        </div>
+    </div>
+    <!--end mobile header-->
+    <!--start header search-->
+    <div class="header-search-outer">
+        <div class="header-search search-v1">
+            <div class="container">
+                <form>
+                    <div class="header-search-inner table-block">
+                        <div class="header-search-bar table-col v-top full-width">
+                            <div class="header-search-dropdown table-col v-top">
+                                <select class="selectpicker" data-live-search="false" data-live-search-style="begins"
+                                        title="Location">
+                                    <option>Location 1</option>
+                                    <option>Location 2</option>
+                                    <option>Location 3</option>
+                                    <option>Location 4</option>
+                                    <option>Location 5</option>
+                                </select>
+                            </div>
+                            <div class="header-search-input table-col v-top full-width">
+                                <input class="form-control" type="text"
+                                       placeholder="Search by neighborhood, city or address">
+                            </div>
+                        </div>
+                        <div class="header-search-filter table-col v-top">
+                            <span class="btn filter-btn">More Filters <i class="fa fa-angle-down fa-left-8"></i></span>
+                            <div class="filter-body">
+                                <div class="form-group">
+                                    <div class="range-slider-wrap">
+                                        <label>Price Range</label>
+                                        <div class="clearfix range-text">
+                                            <input class="input-min range-input pull-left text-left" placeholder=""
+                                                   disabled
+                                                   readonly="" type="text">
+                                            <input class="input-max range-input pull-right text-right" placeholder=""
+                                                   disabled readonly="" type="text">
+                                        </div>
+                                        <div class="slider-wrap">
+                                            <div class="price-range-slider" data-range-min="0" data-range-max="10000"
+                                                 data-range-unit="$"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label>Property Type</label>
+                                    <div class="check-list">
+                                        <div class="checkbox-inline">
+                                            <label>
+                                                <input type="checkbox"> Apartment
+                                            </label>
+                                        </div>
+                                        <div class="checkbox-inline">
+                                            <label>
+                                                <input type="checkbox"> House
+                                            </label>
+                                        </div>
+                                        <div class="checkbox-inline">
+                                            <label>
+                                                <input type="checkbox"> Condo
+                                            </label>
+                                        </div>
+                                        <div class="checkbox-inline">
+                                            <label>
+                                                <input type="checkbox"> Villa
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label>Square Footage</label>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <input type="text" class="form-control" placeholder="Min Area (sqft)">
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <input type="text" class="form-control" placeholder="Max Area (sqft)">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label>Location</label>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <select class="selectpicker" data-live-search="false"
+                                                    data-live-search-style="begins" title="City">
+                                                <option>City 1</option>
+                                                <option>City 2</option>
+                                                <option>City 3</option>
+                                                <option>City 4</option>
+                                                <option>City 5</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <select class="selectpicker" data-live-search="false"
+                                                    data-live-search-style="begins" title="Area">
+                                                <option>Area 1</option>
+                                                <option>Area 2</option>
+                                                <option>Area 3</option>
+                                                <option>Area 4</option>
+                                                <option>Area 5</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <label class="display-block">Beds</label>
+                                            <select class="selectpicker" data-live-search="false"
+                                                    data-live-search-style="begins" title="Any Beds">
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <label class="display-block">Baths</label>
+                                            <select class="selectpicker" data-live-search="false"
+                                                    data-live-search-style="begins" title="Any Baths">
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <label>Features</label>
+                                    <div class="check-list">
+                                        <div class="checkbox-inline">
+                                            <label>
+                                                <input type="checkbox"> Pool
+                                            </label>
+                                        </div>
+                                        <div class="checkbox-inline">
+                                            <label>
+                                                <input type="checkbox"> Garage
+                                            </label>
+                                        </div>
+                                        <div class="checkbox-inline">
+                                            <label>
+                                                <input type="checkbox"> Central AC
+                                            </label>
+                                        </div>
+                                        <div class="checkbox-inline">
+                                            <label>
+                                                <input type="checkbox"> Water Front
+                                            </label>
+                                        </div>
+                                        <div class="checkbox-inline">
+                                            <label>
+                                                <input type="checkbox"> Water Views
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header-search-btn table-col v-top">
+                            <button type="submit" class="btn btn-secondary">Search</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--end header search-->
+    <!--start advanced search mobile-->
+    <div class="search-mobile advanced-search-wrap">
+        <div class="container">
+            <form class="mobile-search" method="post" action="#">
+                <div class="search-head">
+                    <div class="search-bar">
+                        <input type="text" class="form-control" placeholder="Search Property">
+                    </div>
+                    <div class="search-btn">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </div>
+                    <div class="advance-btn">
+                        <button type="button"><i class="fa fa-gear"></i></button>
+                    </div>
+                </div>
+                <div class="search-body">
+                    <div class="body-inner">
+                        <div class="form-group">
+                            <div class="range-slider-wrap">
+                                <label>Price Range</label>
+                                <div class="clearfix range-text">
+                                    <input class="input-min range-input pull-left text-left" placeholder="" disabled
+                                           readonly="" type="text">
+                                    <input class="input-max range-input pull-right text-right" placeholder="" disabled
+                                           readonly="" type="text">
+                                </div>
+                                <div class="slider-wrap">
+                                    <div class="price-range-slider" data-range-min="0" data-range-max="10000"
+                                         data-range-unit="$"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="row row-20">
+                                <div class="col-sm-6 col-xs-6">
+                                    <div class="icon-holder">
+                                        <span class="input-unit">Sqft</span>
+                                        <select class="selectpicker" data-live-search="false"
+                                                data-live-search-style="begins" title="Min Area">
+                                            <option>Min Area</option>
+                                            <option>200</option>
+                                            <option>300</option>
+                                            <option>400</option>
+                                            <option>500</option>
+                                            <option>600</option>
+                                            <option>700</option>
+                                            <option>800</option>
+                                            <option>900</option>
+                                            <option>1000</option>
+                                            <option>1500</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-xs-6">
+                                    <div class="icon-holder">
+                                        <span class="input-unit">Sqft</span>
+                                        <select class="selectpicker" data-live-search="false"
+                                                data-live-search-style="begins" title="Max Area">
+                                            <option>Max Area</option>
+                                            <option>200</option>
+                                            <option>300</option>
+                                            <option>400</option>
+                                            <option>500</option>
+                                            <option>600</option>
+                                            <option>700</option>
+                                            <option>800</option>
+                                            <option>900</option>
+                                            <option>1000</option>
+                                            <option>1500</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="row row-20">
+                                <div class="col-sm-6 col-xs-6">
+                                    <select class="selectpicker" data-live-search="false"
+                                            data-live-search-style="begins" title="City">
+                                        <option>City 1</option>
+                                        <option>City 2</option>
+                                        <option>City 3</option>
+                                        <option>City 4</option>
+                                        <option>City 5</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-6 col-xs-6">
+                                    <select class="selectpicker" data-live-search="false"
+                                            data-live-search-style="begins" title="Area">
+                                        <option>Area 1</option>
+                                        <option>Area 2</option>
+                                        <option>Area 3</option>
+                                        <option>Area 4</option>
+                                        <option>Area 5</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="row row-20">
+                                <div class="col-sm-6 col-xs-6">
+                                    <select class="selectpicker" data-live-search="false"
+                                            data-live-search-style="begins" title="Any Beds">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-6 col-xs-6">
+                                    <select class="selectpicker" data-live-search="false"
+                                            data-live-search-style="begins" title="Any Baths">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="filter-trigger">More Filters</span>
+                        <div class="more-filter-block">
+                            <div class="filter-block-inner">
+                                <div class="check-list">
+                                    <div class="checkbox-inline">
+                                        <label>
+                                            <input type="checkbox"> Pool
+                                        </label>
+                                    </div>
+                                    <div class="checkbox-inline">
+                                        <label>
+                                            <input type="checkbox"> Garage
+                                        </label>
+                                    </div>
+                                    <div class="checkbox-inline">
+                                        <label>
+                                            <input type="checkbox"> Central AC
+                                        </label>
+                                    </div>
+                                    <div class="checkbox-inline">
+                                        <label>
+                                            <input type="checkbox"> Water Front
+                                        </label>
+                                    </div>
+                                    <div class="checkbox-inline">
+                                        <label>
+                                            <input type="checkbox"> Water Views
+                                        </label>
+                                    </div>
+                                    <div class="checkbox-inline">
+                                        <label>
+                                            <input type="checkbox"> Central AC
+                                        </label>
+                                    </div>
+                                    <div class="checkbox-inline">
+                                        <label>
+                                            <input type="checkbox"> Water Front
+                                        </label>
+                                    </div>
+                                    <div class="checkbox-inline">
+                                        <label>
+                                            <input type="checkbox"> Water Views
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-secondary btn-block">Search</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!--end advanced search mobile-->
+</div>
+<!--end header area-->
+<!--start page media area-->
+<div class="ced-page-media media-map" data-page-height="550">
+    <div class="media-map">
+        <div class="ced-loader-wrap">
+            <div class="loading">
+                <div class="loading-bar"></div>
+                <div class="loading-bar"></div>
+                <div class="loading-bar"></div>
+                <div class="loading-bar"></div>
+            </div>
+        </div>
+        <div class="map-actions-topleft map-actions">
+            <span id="ced-map-location" class="map-btn"><i class="fa fa-map-marker"></i></span>
+            <span id="mapzoomIn" class="map-btn"><i class="fa fa-plus"></i> </span>
+            <span id="mapzoomOut" class="map-btn"><i class="fa fa-minus"></i></span>
+        </div>
+        <div class="map-actions-topright map-actions">
+                <span id="ced-map-prev" class="map-btn"><i
+                        class="fa fa-angle-left fa-right-5"></i> <span>Prev</span></span>
+            <span id="ced-map-next" class="map-btn"><span>Next</span> <i
+                    class="fa fa-angle-right fa-left-5"></i></span>
+            <span id="ced-map-full" class="map-btn"><i class="fa fa-arrows-alt"></i></span>
+        </div>
+        <div id="map"></div>
+    </div>
+</div>
+<!--end page media area-->
+<!--start section page body-->
+<main id="ced-page-body">
+    <div class="page-title-wrap">
+        <div class="container">
+            <div class="page-title">
+                <h2>Listing – List Layout</h2>
+            </div>
+            <div class="page-breadcrumb">
+                <ol class="breadcrumb">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">Listing</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <div class="page-body">
+        <div class="container">
+            <div class="row">
+                <!--start content area-->
+                <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 ced-content-area">
+                    <!--start list tabs-->
+                    <div class="view-changer-bar white-bg">
+                        <ul class="changer-nav">
+                            <li class="active"><a href="#">All</a></li>
+                            <li><a href="#">Fore Sale</a></li>
+                            <li><a href="#">Fore Rent</a></li>
+                        </ul>
+                        <div class="changer-actions">
+                            <div class="sort-tab table-col">
+                                <span class="title">Sort by</span>
+                                <select class="selectpicker" title="Date" data-live-search="false">
+                                    <option>Relevance</option>
+                                    <option>Relevance</option>
+                                    <option>Relevance</option>
+                                </select>
+                            </div>
+                            <div class="changer-tabs table-col">
+                                <span class="title">View</span>
+                                <span class="view-changer-btn btn-list active"><i class="fa fa-bars"></i></span>
+                                <span class="view-changer-btn btn-grid"><i class="fa fa-th-large"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end list tabs-->
+
+                    <!--start property items-->
+                    <div class="listing-area">
+                        <div class="item-list-wrap item-list-view">
+                            <div class="item-wrap">
+                                <div class="media property-item">
+                                    <div class="media-left">
+                                        <div class="item-media-thumb animated">
+                                            <a href="property-detail-v1.html" class="item-overlay overlay-gradient-v2"><img
+                                                    src="http://placehold.it/500x300" alt="Thumb" width="500"
+                                                    height="300"></a>
+                                            <div class="label-wrap top-left">
+                                                <label class="label label-primary">For Sale</label>
+                                            </div>
+                                            <div class="item-media-title grid-item-hidden">
+                                                <span class="item-type">Villa</span>
+                                                <span class="item-price">$375/mo</span>
+                                            </div>
+                                            <ul class="item-media-actions">
+                                                <li class="item-fav"><i class="fa fa-heart-o"></i></li>
+                                                <li class="item-compare"><i class="fa fa-plus"></i></li>
+                                                <li class="item-photos"><i class="fa fa-camera"></i></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="media-body item-body">
+                                        <div class="item-body-inner">
+                                            <div class="item-title-head">
+                                                <div class="title-head-left">
+                                                    <div class="item-price-wrap list-item-hidden">
+                                                        <h3 class="item-price">$375/mo</h3>
+                                                    </div>
+                                                    <h4 class="title"><a href="property-detail-v1.html">The home to stay
+                                                        in centre amsterdam</a></h4>
+                                                    <address class="item-address"><i
+                                                            class="fa fa-map-marker fa-right-5"></i> Reno Pl, San
+                                                        Francisco, CA 94133
+                                                    </address>
+                                                </div>
+                                            </div>
+                                            <ul class="item-amenities">
+                                                <li><i class="fa fa-hotel"></i> 3 Beds</li>
+                                                <li><i class="fa fa-s15"></i> 4 Baths</li>
+                                                <li>2,400 sqft</li>
+                                                <li class="item-type">Villa</li>
+                                            </ul>
+                                        </div>
+                                        <div class="item-footer table-block">
+                                            <div class="footer-col table-col v-middle">
+                                                <div class="item-user-image">
+                                                    <a href="agent-single-v1.html">
+                                                        <img src="http://placehold.it/36x36" alt="user-image" width="36"
+                                                             height="36" class="img-circle">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="footer-col table-col v-middle text-right">
+                                                <div class="item-actions">
+                                                    <button class="btn action-btn" data-toggle="popover"
+                                                            data-trigger="focus" data-placement="top"
+                                                            data-content="<a href='tel:+1 (800) 990 8877'><i class='fa fa-phone fa-right-5'></i>+1 (800) 990 8877</a>">
+                                                        <i class="fa fa-phone fa-right-5"></i> Call
+                                                    </button>
+                                                    <button class="btn action-btn" data-toggle="modal"
+                                                            data-target=".email-modal"><i
+                                                            class="fa fa-envelope fa-right-5"></i> Email
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- property item -->
+                            <div class="item-wrap">
+                                <div class="media property-item">
+                                    <div class="media-left">
+                                        <div class="item-media-thumb animated">
+                                            <a href="property-detail-v1.html" class="item-overlay overlay-gradient-v2"><img
+                                                    src="http://placehold.it/500x300" alt="Thumb" width="500"
+                                                    height="300"></a>
+                                            <div class="label-wrap top-left">
+                                                <label class="label label-primary">For Sale</label>
+                                            </div>
+                                            <div class="item-media-title grid-item-hidden">
+                                                <span class="item-type">Villa</span>
+                                                <span class="item-price">$375/mo</span>
+                                            </div>
+                                            <ul class="item-media-actions">
+                                                <li class="item-fav"><i class="fa fa-heart-o"></i></li>
+                                                <li class="item-compare"><i class="fa fa-plus"></i></li>
+                                                <li class="item-photos"><i class="fa fa-camera"></i></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="media-body item-body">
+                                        <div class="item-body-inner">
+                                            <div class="item-title-head">
+                                                <div class="title-head-left">
+                                                    <div class="item-price-wrap list-item-hidden">
+                                                        <h3 class="item-price">$375/mo</h3>
+                                                    </div>
+                                                    <h4 class="title"><a href="property-detail-v1.html">The home to stay
+                                                        in centre amsterdam</a></h4>
+                                                    <address class="item-address"><i
+                                                            class="fa fa-map-marker fa-right-5"></i> Reno Pl, San
+                                                        Francisco, CA 94133
+                                                    </address>
+                                                </div>
+                                            </div>
+                                            <ul class="item-amenities">
+                                                <li><i class="fa fa-hotel"></i> 3 Beds</li>
+                                                <li><i class="fa fa-s15"></i> 4 Baths</li>
+                                                <li>2,400 sqft</li>
+                                                <li class="item-type">Villa</li>
+                                            </ul>
+                                        </div>
+                                        <div class="item-footer table-block">
+                                            <div class="footer-col table-col v-middle">
+                                                <div class="item-user-image">
+                                                    <a href="agent-single-v1.html">
+                                                        <img src="http://placehold.it/36x36" alt="user-image" width="36"
+                                                             height="36" class="img-circle">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="footer-col table-col v-middle text-right">
+                                                <div class="item-actions">
+                                                    <button class="btn action-btn" data-toggle="popover"
+                                                            data-trigger="focus" data-placement="top"
+                                                            data-content="<a href='tel:+1 (800) 990 8877'><i class='fa fa-phone fa-right-5'></i>+1 (800) 990 8877</a>">
+                                                        <i class="fa fa-phone fa-right-5"></i> Call
+                                                    </button>
+                                                    <button class="btn action-btn" data-toggle="modal"
+                                                            data-target=".email-modal"><i
+                                                            class="fa fa-envelope fa-right-5"></i> Email
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- property item -->
+                            <div class="item-wrap">
+                                <div class="media property-item">
+                                    <div class="media-left">
+                                        <div class="item-media-thumb animated">
+                                            <a href="property-detail-v1.html" class="item-overlay overlay-gradient-v2"><img
+                                                    src="http://placehold.it/500x300" alt="Thumb" width="500"
+                                                    height="300"></a>
+                                            <div class="label-wrap top-left">
+                                                <label class="label label-primary">For Sale</label>
+                                            </div>
+                                            <div class="item-media-title grid-item-hidden">
+                                                <span class="item-type">Villa</span>
+                                                <span class="item-price">$375/mo</span>
+                                            </div>
+                                            <ul class="item-media-actions">
+                                                <li class="item-fav"><i class="fa fa-heart-o"></i></li>
+                                                <li class="item-compare"><i class="fa fa-plus"></i></li>
+                                                <li class="item-photos"><i class="fa fa-camera"></i></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="media-body item-body">
+                                        <div class="item-body-inner">
+                                            <div class="item-title-head">
+                                                <div class="title-head-left">
+                                                    <div class="item-price-wrap list-item-hidden">
+                                                        <h3 class="item-price">$375/mo</h3>
+                                                    </div>
+                                                    <h4 class="title"><a href="property-detail-v1.html">The home to stay
+                                                        in centre amsterdam</a></h4>
+                                                    <address class="item-address"><i
+                                                            class="fa fa-map-marker fa-right-5"></i> Reno Pl, San
+                                                        Francisco, CA 94133
+                                                    </address>
+                                                </div>
+                                            </div>
+                                            <ul class="item-amenities">
+                                                <li><i class="fa fa-hotel"></i> 3 Beds</li>
+                                                <li><i class="fa fa-s15"></i> 4 Baths</li>
+                                                <li>2,400 sqft</li>
+                                                <li class="item-type">Villa</li>
+                                            </ul>
+                                        </div>
+                                        <div class="item-footer table-block">
+                                            <div class="footer-col table-col v-middle">
+                                                <div class="item-user-image">
+                                                    <a href="agent-single-v1.html">
+                                                        <img src="http://placehold.it/36x36" alt="user-image" width="36"
+                                                             height="36" class="img-circle">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="footer-col table-col v-middle text-right">
+                                                <div class="item-actions">
+                                                    <button class="btn action-btn" data-toggle="popover"
+                                                            data-trigger="focus" data-placement="top"
+                                                            data-content="<a href='tel:+1 (800) 990 8877'><i class='fa fa-phone fa-right-5'></i>+1 (800) 990 8877</a>">
+                                                        <i class="fa fa-phone fa-right-5"></i> Call
+                                                    </button>
+                                                    <button class="btn action-btn" data-toggle="modal"
+                                                            data-target=".email-modal"><i
+                                                            class="fa fa-envelope fa-right-5"></i> Email
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- property item -->
+                            <div class="item-wrap">
+                                <div class="media property-item">
+                                    <div class="media-left">
+                                        <div class="item-media-thumb animated">
+                                            <a href="property-detail-v1.html" class="item-overlay overlay-gradient-v2"><img
+                                                    src="http://placehold.it/500x300" alt="Thumb" width="500"
+                                                    height="300"></a>
+                                            <div class="label-wrap top-left">
+                                                <label class="label label-primary">For Sale</label>
+                                            </div>
+                                            <div class="item-media-title grid-item-hidden">
+                                                <span class="item-type">Villa</span>
+                                                <span class="item-price">$375/mo</span>
+                                            </div>
+                                            <ul class="item-media-actions">
+                                                <li class="item-fav"><i class="fa fa-heart-o"></i></li>
+                                                <li class="item-compare"><i class="fa fa-plus"></i></li>
+                                                <li class="item-photos"><i class="fa fa-camera"></i></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="media-body item-body">
+                                        <div class="item-body-inner">
+                                            <div class="item-title-head">
+                                                <div class="title-head-left">
+                                                    <div class="item-price-wrap list-item-hidden">
+                                                        <h3 class="item-price">$375/mo</h3>
+                                                    </div>
+                                                    <h4 class="title"><a href="property-detail-v1.html">The home to stay
+                                                        in centre amsterdam</a></h4>
+                                                    <address class="item-address"><i
+                                                            class="fa fa-map-marker fa-right-5"></i> Reno Pl, San
+                                                        Francisco, CA 94133
+                                                    </address>
+                                                </div>
+                                            </div>
+                                            <ul class="item-amenities">
+                                                <li><i class="fa fa-hotel"></i> 3 Beds</li>
+                                                <li><i class="fa fa-s15"></i> 4 Baths</li>
+                                                <li>2,400 sqft</li>
+                                                <li class="item-type">Villa</li>
+                                            </ul>
+                                        </div>
+                                        <div class="item-footer table-block">
+                                            <div class="footer-col table-col v-middle">
+                                                <div class="item-user-image">
+                                                    <a href="agent-single-v1.html">
+                                                        <img src="http://placehold.it/36x36" alt="user-image" width="36"
+                                                             height="36" class="img-circle">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="footer-col table-col v-middle text-right">
+                                                <div class="item-actions">
+                                                    <button class="btn action-btn" data-toggle="popover"
+                                                            data-trigger="focus" data-placement="top"
+                                                            data-content="<a href='tel:+1 (800) 990 8877'><i class='fa fa-phone fa-right-5'></i>+1 (800) 990 8877</a>">
+                                                        <i class="fa fa-phone fa-right-5"></i> Call
+                                                    </button>
+                                                    <button class="btn action-btn" data-toggle="modal"
+                                                            data-target=".email-modal"><i
+                                                            class="fa fa-envelope fa-right-5"></i> Email
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- property item -->
+                        </div>
+                    </div>
+                    <!--end property items-->
+
+                    <!--start Pagination-->
+                    <div class="pagination-wrap">
+                        <ul class="pagination">
+                            <li class="disabled"><a aria-label="Previous" href="#"><span aria-hidden="true"><i
+                                    class="fa fa-angle-left"></i></span></a></li>
+                            <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a aria-label="Next" href="#"><span aria-hidden="true"><i class="fa fa-angle-right"></i></span></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--start Pagination-->
+                </div>
+                <!--start sidebar area-->
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 col-md-offset-0 col-sm-offset-3 ced-sidebar-area">
+                    <aside id="sidebar">
+                        <!--Widget Calculate-->
+                        <div class="widget widget_calculate">
+                            <div class="widget-top">
+                                <h3 class="widget-title">Mortgage Calculator</h3>
+                            </div>
+                            <div class="widget-body">
+                                <form>
+                                    <div class="form-group icon-holder icon-right icon-dark">
+                                        <input class="form-control" placeholder="Total Amount" type="text">
+                                        <span class="field-icon"><i class="fa fa-dollar"></i></span>
+                                    </div>
+                                    <div class="form-group icon-holder icon-right icon-dark">
+                                        <input class="form-control" placeholder="Down payment" type="text">
+                                        <span class="field-icon"><i class="fa fa-dollar"></i></span>
+                                    </div>
+                                    <div class="form-group icon-holder icon-right icon-dark">
+                                        <input class="form-control" placeholder="Interest rate" type="text">
+                                        <span class="field-icon">%</span>
+                                    </div>
+                                    <div class="form-group icon-holder icon-right icon-dark">
+                                        <input class="form-control" placeholder="Loan term (Years)" type="text">
+                                        <span class="field-icon"><i class="fa fa-calendar"></i></span>
+                                    </div>
+                                    <div class="form-group icon-holder icon-right icon-dark">
+                                        <input class="form-control" placeholder="Total payments" type="text">
+                                        <span class="field-icon">n.</span>
+                                    </div>
+                                    <div class="form-group icon-holder icon-right icon-dark">
+                                        <input class="form-control" placeholder="Monthly payment" type="text">
+                                        <span class="field-icon"><i class="fa fa-dollar"></i></span>
+                                    </div>
+                                    <button class="btn btn-secondary btn-block">Calculate</button>
+                                    <div class="morg-detail">
+                                        <div class="morg-result">
+                                            <h3>Bi-Weekly Payment: <strong>$-43.82</strong></h3>
+                                            <div class="show-morg"><i class="fa fa-info-circle"></i></div>
+                                        </div>
+                                        <div class="morg-summery">
+                                            <div class="result-title">
+                                                Amount Financed:
+                                            </div>
+                                            <div class="result-value">
+                                                90000
+                                            </div>
+                                            <div class="result-title">
+                                                Mortgage Payments:
+                                            </div>
+                                            <div class="result-value">
+                                                90000
+                                            </div>
+                                            <div class="result-title">
+                                                Annual cost of Loan:
+                                            </div>
+                                            <div class="result-value">
+                                                90000
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <!--Widget Slider-->
+                        <div class="widget widget-slider">
+                            <div class="widget-top">
+                                <h3 class="widget-title">Featured Properties Slider</h3>
+                            </div>
+                            <div class="widget-body">
+                                <div class="ced-widget-slider owl-carousel owl-theme">
+                                    <div class="item">
+                                        <div class="property-item-layer">
+                                            <div class="item-media-thumb">
+                                                <a href="#"><img src="http://placehold.it/382x260" alt="Thumb"
+                                                                 width="382" height="260"></a>
+                                                <div class="label-wrap top-left">
+                                                    <label class="label label-primary">For Sale</label>
+                                                </div>
+                                                <div class="item-caption-layer">
+                                                    <div class="layer-top">
+                                                        <div class="caption-layer-col">
+                                                            <h4 class="title"><a href="#">Apartment for rent</a></h4>
+                                                        </div>
+                                                        <div class="caption-layer-col">
+                                                            <span class="item-price">$375/mo</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="layer-bottom">
+                                                        <div class="caption-layer-col full-width white-space-normal">
+                                                            <address class="item-address"><i
+                                                                    class="fa fa-map-marker fa-right-5"></i> Reno Pl,
+                                                                San Francisco, CA 94133
+                                                            </address>
+                                                            <ul class="item-amenities">
+                                                                <li><i class="fa fa-hotel"></i> 3 Beds</li>
+                                                                <li><i class="fa fa-s15"></i> 4 Baths</li>
+                                                                <li>2,400 sqft</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="property-item-layer">
+                                            <div class="item-media-thumb">
+                                                <a href="#"><img src="http://placehold.it/382x260" alt="Thumb"
+                                                                 width="382" height="260"></a>
+                                                <div class="label-wrap top-left">
+                                                    <label class="label label-primary">For Sale</label>
+                                                </div>
+                                                <div class="item-caption-layer">
+                                                    <div class="layer-top">
+                                                        <div class="caption-layer-col">
+                                                            <h4 class="title"><a href="#">Apartment for rent</a></h4>
+                                                        </div>
+                                                        <div class="caption-layer-col">
+                                                            <span class="item-price">$375/mo</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="layer-bottom">
+                                                        <div class="caption-layer-col full-width white-space-normal">
+                                                            <address class="item-address"><i
+                                                                    class="fa fa-map-marker fa-right-5"></i> Reno Pl,
+                                                                San Francisco, CA 94133
+                                                            </address>
+                                                            <ul class="item-amenities">
+                                                                <li><i class="fa fa-hotel"></i> 3 Beds</li>
+                                                                <li><i class="fa fa-s15"></i> 4 Baths</li>
+                                                                <li>2,400 sqft</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="property-item-layer">
+                                            <div class="item-media-thumb">
+                                                <a href="#"><img src="http://placehold.it/382x260" alt="Thumb"
+                                                                 width="382" height="260"></a>
+                                                <div class="label-wrap top-left">
+                                                    <label class="label label-primary">For Sale</label>
+                                                </div>
+                                                <div class="item-caption-layer">
+                                                    <div class="layer-top">
+                                                        <div class="caption-layer-col">
+                                                            <h4 class="title"><a href="#">Apartment for rent</a></h4>
+                                                        </div>
+                                                        <div class="caption-layer-col">
+                                                            <span class="item-price">$375/mo</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="layer-bottom">
+                                                        <div class="caption-layer-col full-width white-space-normal">
+                                                            <address class="item-address"><i
+                                                                    class="fa fa-map-marker fa-right-5"></i> Reno Pl,
+                                                                San Francisco, CA 94133
+                                                            </address>
+                                                            <ul class="item-amenities">
+                                                                <li><i class="fa fa-hotel"></i> 3 Beds</li>
+                                                                <li><i class="fa fa-s15"></i> 4 Baths</li>
+                                                                <li>2,400 sqft</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="property-item-layer">
+                                            <div class="item-media-thumb">
+                                                <a href="#"><img src="http://placehold.it/382x260" alt="Thumb"
+                                                                 width="382" height="260"></a>
+                                                <div class="label-wrap top-left">
+                                                    <label class="label label-primary">For Sale</label>
+                                                </div>
+                                                <div class="item-caption-layer">
+                                                    <div class="layer-top">
+                                                        <div class="caption-layer-col">
+                                                            <h4 class="title"><a href="#">Apartment for rent</a></h4>
+                                                        </div>
+                                                        <div class="caption-layer-col">
+                                                            <span class="item-price">$375/mo</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="layer-bottom">
+                                                        <div class="caption-layer-col full-width white-space-normal">
+                                                            <address class="item-address"><i
+                                                                    class="fa fa-map-marker fa-right-5"></i> Reno Pl,
+                                                                San Francisco, CA 94133
+                                                            </address>
+                                                            <ul class="item-amenities">
+                                                                <li><i class="fa fa-hotel"></i> 3 Beds</li>
+                                                                <li><i class="fa fa-s15"></i> 4 Baths</li>
+                                                                <li>2,400 sqft</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="property-item-layer">
+                                            <div class="item-media-thumb animated">
+                                                <a href="#"><img src="http://placehold.it/382x260" alt="Thumb"
+                                                                 width="382" height="260"></a>
+                                                <div class="label-wrap top-left">
+                                                    <label class="label label-primary">For Sale</label>
+                                                </div>
+                                                <div class="item-caption-layer">
+                                                    <div class="layer-top">
+                                                        <div class="caption-layer-col">
+                                                            <h4 class="title"><a href="#">Apartment for rent</a></h4>
+                                                        </div>
+                                                        <div class="caption-layer-col">
+                                                            <span class="item-price">$375/mo</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="layer-bottom">
+                                                        <div class="caption-layer-col full-width white-space-normal">
+                                                            <address class="item-address"><i
+                                                                    class="fa fa-map-marker fa-right-5"></i> Reno Pl,
+                                                                San Francisco, CA 94133
+                                                            </address>
+                                                            <ul class="item-amenities">
+                                                                <li><i class="fa fa-hotel"></i> 3 Beds</li>
+                                                                <li><i class="fa fa-s15"></i> 4 Baths</li>
+                                                                <li>2,400 sqft</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Widget Categories-->
+                        <div class="widget widget_categories">
+                            <div class="widget-top">
+                                <h3 class="widget-title">Property Categories</h3>
+                            </div>
+                            <div class="widget-body">
+                                <ul>
+                                    <li><a href="#">Apartment</a> <span class="cat-count">(30)</span></li>
+                                    <li><a href="#">Multi Family Home</a> <span class="cat-count">(30)</span></li>
+                                    <li><a href="#">Single Family Home</a> <span class="cat-count">(30)</span></li>
+                                    <li><a href="#">Villa</a> <span class="cat-count">(30)</span></li>
+                                    <li><a href="#">Loft</a> <span class="cat-count">(30)</span></li>
+                                </ul>
+                            </div>
+                        </div>                            <!--Widget Posts List-->
+                        <div class="widget widget_media_list">
+                            <div class="widget-top">
+                                <h3 class="widget-title">We recommend</h3>
+                            </div>
+                            <div class="widget-body">
+                                <div class="media">
+                                    <div class="media-left">
+                                        <a class="media-object" href="#">
+                                            <img alt="thumb" src="http://placehold.it/108x127" width="108" height="128">
+                                        </a>
+                                    </div>
+                                    <div class="media-body">
+                                        <h4 class="price">$14,500.00/mon</h4>
+                                        <h3 class="media-heading"><a href="#">Confortable apartment</a></h3>
+                                        <address>City, Abu Dhabi</address>
+                                        <div class="amenities">
+                                            <p>3 beds | 2 baths | 1,238 sqft</p>
+                                            <p>- Apartment</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="media">
+                                    <div class="media-left">
+                                        <a class="media-object" href="#">
+                                            <img alt="thumb" src="http://placehold.it/108x127" width="108" height="128">
+                                        </a>
+                                    </div>
+                                    <div class="media-body">
+                                        <h4 class="price">$14,500.00/mon</h4>
+                                        <h3 class="media-heading"><a href="#">Confortable apartment</a></h3>
+                                        <address>City, Abu Dhabi</address>
+                                        <div class="amenities">
+                                            <p>3 beds | 2 baths | 1,238 sqft</p>
+                                            <p>- Apartment</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="media">
+                                    <div class="media-left">
+                                        <a class="media-object" href="#">
+                                            <img alt="thumb" src="http://placehold.it/108x127" width="108" height="128">
+                                        </a>
+                                    </div>
+                                    <div class="media-body">
+                                        <h4 class="price">$14,500.00/mon</h4>
+                                        <h3 class="media-heading"><a href="#">Confortable apartment</a></h3>
+                                        <address>City, Abu Dhabi</address>
+                                        <div class="amenities">
+                                            <p>3 beds | 2 baths | 1,238 sqft</p>
+                                            <p>- Apartment</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<!--end section page body-->
+
+<!--start footer-->
+<div id="footer-area">
+    <footer id="footer">
+        <!--start pre-footer area-->
+        <div class="pre-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-12 col-xs-12">
+                        <div class="footer-widget widget-about">
+                            <div class="widget-top"><h4 class="widget-title">About Site</h4></div>
+                            <div class="widget-body">
+                                <p> Aenean sollicitudin, lorem quis bibendum auctor, nisi elit conequat ipsum, nec
+                                    sagitti sem nibh id elit. Duised odio sit amet nibh vulputate cursus a sit amet
+                                    mauris. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12 col-xs-12">
+                        <div class="footer-widget widget_contact">
+                            <div class="widget-top">
+                                <h4 class="widget-title">Contact Us</h4>
+                            </div>
+                            <div class="widget-body">
+                                <ul>
+                                    <li><i class="fa fa-map-marker fa-right-5"></i> 57 Leonard Igorevich St, New York NY
+                                        10013, USA
+                                    </li>
+                                    <li><i class="fa fa-phone fa-right-5"></i> Call us FREE +1 (800) 990 8877</li>
+                                    <li><i class="fa fa-envelope-o fa-right-5"></i> <a href="mailto:email@email.com">
+                                        info@habro.com</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-xs-12">
+                        <div class="footer-widget widget_newsletter">
+                            <div class="widget-top">
+                                <h4 class="widget-title">Newsletter</h4>
+                            </div>
+                            <div class="widget-body">
+                                <div class="letter-body">
+                                    <form class="form-horizontal">
+                                        <div class="input-group icon-holder">
+                                            <input class="form-control" placeholder="Newsletter">
+                                            <span class="field-icon"><i class="fa fa-envelope-o"></i></span>
+                                            <span class="input-group-btn">
+                                                    <button class="btn btn-primary btn-block">Subscribe <i
+                                                            class="fa fa-send fa-left-5"></i></button>
+                                                </span>
+
+                                        </div>
+                                    </form>
+                                    <p>Aenean sollicitudin, lorem quis bibendum auctor, nisi elit conequat ipsum, nec
+                                        sagitti sem nibh id elit. Duised odio sit amet nibh vulputate cursus a sit amet
+                                        mauris.</p>
+                                    <ul class="social-icons">
+                                        <li>Follow us on:</li>
+                                        <li><a target="_blank" href="#" class="icon-facebook"><i
+                                                class="fa fa-facebook"></i></a></li>
+                                        <li><a target="_blank" href="#" class="icon-twitter"><i
+                                                class="fa fa-twitter"></i></a></li>
+                                        <li><a target="_blank" href="#" class="icon-linkedin"><i
+                                                class="fa fa-linkedin"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end pre-footer area-->
+        <!--start footer copyright area-->
+        <div class="footer-copyright">
+            <div class="container">
+                <div class="footer-col">
+                    <p>Habro - All rights reserved</p>
+                </div>
+                <div class="footer-col footer-social text-right">
+                    <p>
+                        <a target="_blank" href="#" class="icon-facebook"><i class="fa fa-facebook"></i></a>
+
+                        <a target="_blank" href="#" class="icon-twitter"><i class="fa fa-twitter"></i></a>
+
+                        <a target="_blank" href="#" class="icon-linkedin"><i class="fa fa-linkedin"></i></a>
+
+                        <a target="_blank" href="#" class="icon-google-plus"><i class="fa fa-google-plus"></i></a>
+
+                        <a target="_blank" href="#" class="icon-instagram"><i class="fa fa-instagram"></i></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!--end footer copyright area-->
+    </footer>
+</div>
+<!--end footer-->
+<!-- Inquiry form Modal -->
+<div class="modal fade email-modal" tabindex="-1" role="dialog" aria-labelledby="emailLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-close"></i>
+                </button>
+                <h4 class="modal-title" id="emailLabel">Contact Info</h4>
+            </div>
+            <div class="modal-body">
+                <div class="property-contact-info">
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="#">
+                                <img src="http://placehold.it/162x162" class="actual-img-ratio" alt="image" width="162"
+                                     height="162">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <div class="info-head">
+                                <h4 class="media-heading"> Luis Nazario Garcia </h4>
+                                <p class="position text-primary">MONTERO AGENT</p>
+                                <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                                    euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                                    Ut wisi enim ad minim veniam. </p>
+                                <ul class="other-info list-style-none no-padding">
+                                    <li><span>Phone :</span> 100 8344 8899</li>
+                                </ul>
+                                <ul class="agent-social list-style-none no-padding no-margin">
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                    <h4 class="inquire-title">Inquire about this property</h4>
+                    <form method="post" class="agent-inquire-form">
+                        <div class="row row-20">
+                            <div class="col-sm-6 col-xs-12">
+                                <div class="form-group">
+                                    <input class="form-control" name="name" placeholder="Your Name" type="text">
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-xs-12">
+                                <div class="form-group">
+                                    <input class="form-control" name="email" placeholder="Email" type="email">
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-xs-12">
+                                <div class="form-group">
+                                        <textarea class="form-control" name="message" rows="5"
+                                                  placeholder="Location"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn-secondary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Start Scripts-->
+<script  src="js/jquery.js"></script>
+<script  src="js/jquery.validate.min.js"></script>
+<script  src="js/bootstrap.min.js"></script>
+<script  src="js/bootstrap-select.js"></script>
+<script  src="js/jquery.easing.1.3.js"></script>
+<script  src="js/jquery-ui.js"></script>
+<script  src="js/isotope.pkgd.min.js"></script>
+<script  src="js/modernizr.custom.js"></script>
+<script  src="js/owl.carousel.min.js"></script>
+<script  src="js/jquery.magnific-popup.min.js"></script>
+<script  src="js/custom.js"></script>
+<script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAF4tudXsIBjcejJC78-O5oF2D-w2Vr5aU&amp;callback=initMap"></script>
+<script  src="js/markerclusterer.js"></script>
+<script  src="js/infobox.js"></script>
+<script  src="js/custom-map.js"></script>
+</body>
+</html>

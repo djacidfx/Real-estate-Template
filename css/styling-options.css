@@ -1,0 +1,518 @@
+/*-------start habro styling options--------*/
+.full-width {
+  width: 100%;
+}
+
+.border-default-color {
+  border-color: #dbdbdb;
+}
+
+.primary-color, a,
+.text-primary,
+.btn-transparent,
+.breadcrumb li.active,
+.navi .ced-megamenu-wrap a:hover,
+.header-search-filter .filter-btn.active,
+.header-search-filter .filter-btn.active .fa,
+.header-search-filter .filter-btn:hover,
+.header-search-filter .filter-btn:focus,
+.header-search-filter .filter-btn:active,
+.header-search-filter .filter-btn:hover .fa,
+.item-footer .item-user-image a:hover,
+.view-changer-btn:hover,
+.view-changer-btn.active,
+.property-actions li:hover,
+.property-actions li:active,
+.property-actions li:focus,
+.property-actions li.active,
+.property-item-layer .item-media-actions li:hover,
+.property-item-layer .item-media-actions li.active,
+#property-media #property-title-wrap .property-actions li:hover,
+#property-media #property-title-wrap .property-actions li:active,
+#property-media #property-title-wrap .property-actions li:focus,
+.agent-module-body .info .name:hover,
+.agent-module-media .info .name:hover,
+.dashboard-title-head .visit-site:hover,
+.payment-taber .tab:hover i,
+.payment-taber .tab.active i,
+.property-lightbox .lightbox-actions .view-image:hover,
+.filter-trigger:before,
+.blog-body .title a:hover,
+.comment-actions .comment-like:hover,
+.comment-actions .comment-edit-link:hover,
+.author-meta li a:hover,
+.modal-header .close:hover,
+.agent-info .name a:hover,
+.widget_agent_contact .view:hover,
+.header-contact .header-info .icon,
+.search-mobile .search-btn:hover button,
+.search-mobile .advance-btn:hover button,
+.search-mobile .advance-btn.active button,
+.modal .btn-close:hover,
+.modal .close:hover,
+.widget_agent_contact .name a:hover,
+.agent-module-body .view:hover,
+.team-block:hover .title a,
+.team-block .social-icons a:hover,
+.contact-info li a:hover {
+  color: #21cdec;
+}
+
+.secondary-color, .property-actions .item-fav.active i,
+.property-actions .item-fav.active .fa {
+  color: #ffa200;
+}
+
+.border-primary-color, .view-changer-btn:hover,
+.view-changer-btn.active,
+.header-search-inner .header-search-dropdown .bootstrap-select .btn:focus,
+.header-search-inner .header-search-input .form-control:focus,
+.header-transparent .header-search-inner .header-search-dropdown .bootstrap-select .btn:focus,
+.header-transparent .header-search-inner .header-search-input .form-control:focus,
+.cluster div:after,
+blockquote,
+.services-block:hover,
+.services-block:hover .icon,
+.header-contact .social-icons a:hover,
+.team-block:hover,
+.open > .btn.dropdown-toggle,
+.open > .bootstrap-select .btn,
+.open > .btn-default.dropdown-toggle,
+.open > .btn-default.dropdown-toggle:hover,
+.open > .btn-default.dropdown-toggle:focus,
+.open > .btn-default.dropdown-toggle:active, .btn.btn-white:hover,
+.btn.btn-white:focus,
+.btn.btn-white:active, .btn-primary {
+  border-color: #21cdec;
+}
+
+.border-secondary-color, .btn-secondary {
+  border-color: #ffa200;
+}
+
+.hover-effect-primary-color, .hover-effect:before,
+.hover-effect2:before,
+.hover-effect3:before {
+  background-color: rgba(33, 205, 236, 0.8);
+}
+
+.primary-color-hover, a:hover,
+a:focus,
+a:active,
+.navi > ul > li > a:hover,
+.account-loggedin:hover,
+.login-register a:hover,
+.menu-dropdown a:hover,
+.menu-dropdown li.active > a,
+.top-nav > ul .menu-dropdown a:hover,
+.item-title-head .title a:hover,
+.services-block .title a:hover,
+.services-block .ser-link:hover,
+.services-block:hover .icon,
+.services-block:hover .title a,
+.news-item-block .heading a:hover {
+  color: #13c1e0;
+}
+
+.secondary-color-hover {
+  color: #e69200;
+}
+
+.primary-background, .bg-primary,
+.label-primary,
+.account-loggedin:before,
+.ui-widget-header,
+.ui-slider .ui-slider-handle,
+.property-video-block,
+.owl-carousel .owl-nav div[class*="owl-"],
+.loading-bar,
+.account-dropdown ul > li .msg-alert,
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus,
+.map-info-box .box-close:hover,
+.cluster div,
+.map-btn:hover,
+.meta-tags a,
+.module-head .title-alt::before,
+.module-head .title-alt::after,
+.table-primary > thead > tr > th,
+.ced-lightbox-thumb:hover .imgs-counter,
+.header-contact .social-icons a:hover,
+.pagination-wrap .pagination li.active a,
+.pagination-wrap .pagination li:hover a,
+.pagination-wrap .pagination li:focus a, .btn.btn-white:hover,
+.btn.btn-white:focus,
+.btn.btn-white:active, .btn-primary, .mobile-nav-dropdown ul ul,
+.mobile-nav-dropdown li:hover,
+.mobile-nav-dropdown li.active,
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus,
+.dropdown-menu > li > a:active, .item-actions .btn:hover,
+.item-actions .btn:active,
+.item-actions .btn:focus {
+  background-color: #21cdec;
+}
+
+.secondary-background, .bg-secondary,
+.label-secondary, .btn-secondary, .agent-list-footer .view-list-btn:hover,
+.agent-list-footer .view-list-btn:active,
+.agent-list-footer .view-list-btn:focus {
+  background-color: #ffa200;
+}
+
+.primary-background-hover, .btn-primary:hover,
+.btn-primary:focus,
+.btn-primary.focus,
+.btn-primary:active,
+.btn-primary.active,
+.btn-primary:active:focus,
+.btn-primary.active:hover,
+.btn-primary.active:focus,
+.btn-primary.active:disabled,
+.btn-primary.disabled:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:hover,
+.btn-primary[disabled]:focus,
+.btn-primary[disabled].focus,
+fieldset[disabled] .btn-primary:hover,
+fieldset[disabled] .btn-primary:focus,
+fieldset[disabled] .btn-primary.focus {
+  background-color: #11adc9;
+}
+
+.secondary-background-hover, .btn-secondary:hover,
+.btn-secondary:focus,
+.btn-secondary.focus,
+.btn-secondary:active,
+.btn-secondary.active,
+.btn-secondary:active:focus,
+.btn-secondary.active:hover,
+.btn-secondary.active:focus,
+.btn-secondary.active:disabled,
+.btn-secondary.disabled:hover,
+.btn-secondary.disabled:focus,
+.btn-secondary[disabled]:hover,
+.btn-secondary[disabled]:focus,
+.btn-secondary[disabled].focus,
+fieldset[disabled] .btn-secondary:hover,
+fieldset[disabled] .btn-secondary:focus,
+fieldset[disabled] .btn-secondary.focus {
+  background-color: #cc8200;
+}
+
+.text-default {
+  color: #d7dce1;
+}
+
+.text-success {
+  color: #85c341;
+}
+
+.text-danger {
+  color: #c31b1b;
+}
+
+.text-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+  text-overflow: ellipsis;
+}
+
+.white-color {
+  color: #fff;
+}
+
+.white-bg, .account-dropdown,
+.menu-dropdown,
+.menu-dropdown ul {
+  background-color: #fff;
+}
+
+.transparent-bg {
+  background-color: transparent !important;
+}
+
+.grey-bg {
+  background-color: #4b4b4b;
+}
+
+.grey-bg-light {
+  background-color: #a5a5a5;
+}
+
+.grey-bg-lighter {
+  background-color: #bdbdbd;
+}
+
+.white-color {
+  color: #fff;
+}
+
+.black-color {
+  color: #000;
+}
+
+.black-bg {
+  background-color: #000;
+}
+
+.font-color {
+  color: #636363;
+}
+
+.display-block {
+  display: block;
+}
+
+.list-none {
+  list-style: none;
+}
+
+.display-inline-block {
+  display: inline-block;
+}
+
+.display-inline {
+  display: inline;
+}
+
+.element-shadow {
+  box-shadow: 0 1px 4px -1px rgba(0, 0, 0, 0.2);
+}
+
+/*---------start habro group classes--------*/
+h1, h2, h3, h4, h5, h6 {
+  color: #2c2c2c;
+}
+
+.btn:hover,
+.btn:focus,
+.btn.focus {
+  color: #fff;
+}
+
+.btn-default {
+  background-color: #bdbdbd;
+  border-color: #bdbdbd;
+}
+
+.btn-default:hover,
+.btn-default:focus,
+.btn-default.focus,
+.btn-default:active,
+.btn-default.active,
+.btn-default:active:focus {
+  background-color: #979797;
+  border-color: #979797;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary.focus,
+.btn-primary:active,
+.btn-primary.active,
+.btn-primary:active:focus,
+.btn-primary.active:hover,
+.btn-primary.active:focus,
+.btn-primary.active:disabled,
+.btn-primary.disabled:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:hover,
+.btn-primary[disabled]:focus,
+.btn-primary[disabled].focus,
+fieldset[disabled] .btn-primary:hover,
+fieldset[disabled] .btn-primary:focus,
+fieldset[disabled] .btn-primary.focus {
+  border-color: #12b5d2;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus,
+.btn-secondary.focus,
+.btn-secondary:active,
+.btn-secondary.active,
+.btn-secondary:active:focus,
+.btn-secondary.active:hover,
+.btn-secondary.active:focus,
+.btn-secondary.active:disabled,
+.btn-secondary.disabled:hover,
+.btn-secondary.disabled:focus,
+.btn-secondary[disabled]:hover,
+.btn-secondary[disabled]:focus,
+.btn-secondary[disabled].focus,
+fieldset[disabled] .btn-secondary:hover,
+fieldset[disabled] .btn-secondary:focus,
+fieldset[disabled] .btn-secondary.focus {
+  border-color: #d68800;
+}
+
+.menu-dropdown > li,
+.menu-dropdown > li ul > li,
+.account-dropdown ul > li,
+.dropdown-menu > li {
+  border-color: whitesmoke;
+}
+
+.mobile-nav-dropdown li,
+.mobile-nav-dropdown .menu-expand {
+  border-color: whitesmoke;
+}
+
+.mobile-nav-dropdown li.active,
+.mobile-nav-dropdown li:hover,
+.mobile-nav-dropdown ul ul li,
+.mobile-nav-dropdown ul ul li.active {
+  border-color: rgba(0, 0, 0, 0.05);
+}
+
+.changer-nav li:active a,
+.changer-nav li.active a,
+.changer-nav li:hover a,
+.tab.active,
+.tab:active,
+.tab:hover {
+  box-shadow: inset 0 -3px 0 #21cdec;
+}
+
+.agent-list-footer .view-list-btn:hover,
+.agent-list-footer .view-list-btn:active,
+.agent-list-footer .view-list-btn:focus {
+  border-color: #ffa200;
+}
+
+.item-actions .btn:hover,
+.item-actions .btn:active,
+.item-actions .btn:focus {
+  border-color: #21cdec;
+}
+
+body {
+  font-size: 14px;
+  line-height: 24px;
+  background-color: #F6F6F6;
+  font-weight: 400;
+  color: #2c2c2c;
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*Start headers style*/
+.header-transparent .header-type-1.header-sticky .header-body,
+.header-transparent .header-type-3.header-sticky .header-body {
+  background-color: #21cdec;
+}
+
+.header-type-1 .header-body {
+  background-color: #21cdec;
+}
+.header-type-1 .navi > ul > li > a {
+  color: #fff;
+}
+
+.header-type-2 .header-right .btn-listing {
+  border-color: #21cdec;
+  color: #21cdec;
+}
+.header-type-2 .header-right .btn-listing:hover {
+  color: #fff;
+}
+
+.header-type-3 .header-right .btn-listing {
+  background-color: #7e7e7e;
+  color: #fff;
+}
+.header-type-3 .header-right .btn-listing:hover {
+  background-color: #4b4b4b;
+}
+.header-type-3 .header-right .btn-login-register {
+  color: #636363;
+}
+.header-type-3 .header-right .btn-login-register:hover {
+  color: #21cdec;
+}
+
+.header-type-2 .header-body,
+.header-type-3 .header-body {
+  background-color: #fff;
+}
+.header-type-2 .header-right .btn-login-register,
+.header-type-3 .header-right .btn-login-register {
+  color: #636363;
+}
+.header-type-2 .header-right .btn-login-register:hover,
+.header-type-3 .header-right .btn-login-register:hover {
+  color: #21cdec;
+}
+
+.header-right .btn-listing {
+  border-color: #fff;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #fff;
+}
+.header-right .btn-listing:hover {
+  background-color: #21cdec;
+  color: #fff;
+}
+
+.navi > ul > li > a:before,
+.header-right .btn-login-register:before {
+  background-color: #11adc9;
+}
+
+.account-dropdown ul li.active > a,
+.account-dropdown ul li:hover > a {
+  background-color: #21cdec;
+}
+.account-dropdown ul .sub-menu {
+  background-color: #50d8f0;
+}
+.account-dropdown ul .sub-menu li.active > a,
+.account-dropdown ul .sub-menu li:hover > a {
+  color: #fff;
+  background-color: #21cdec;
+}
+.account-dropdown ul .sub-menu a {
+  color: #636363;
+}
+
+.mobile-header {
+  background-color: #21cdec;
+}
+
+/*Start Call to action style*/
+#call-to-action {
+  background-color: #1A1A1A;
+}
+
+/*Start footer style*/
+#footer {
+  background-color: #282828;
+}
+
+#footer p {
+  color: #fff;
+}
+
+/*Start dashboard style*/
+.dashboard-panel {
+  background-color: #282828;
+}
+
+.board-panel-menu > li {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+.board-panel-menu > li a {
+  color: #fff;
+}
+.board-panel-menu li.active > a,
+.board-panel-menu li:hover > a {
+  background-color: #202020;
+}
+.board-panel-menu .sub-menu {
+  background-color: #141414;
+}
